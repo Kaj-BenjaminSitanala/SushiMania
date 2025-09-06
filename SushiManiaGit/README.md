@@ -19,10 +19,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Kaj-Benjamin Sitanala
 
   #### Je startniveau:
-  hier je startniveau (kies uit zwart, rood óf blauw)
-
+  Rood
   #### Je focus:
-  hier je focus (kies uit responsive óf surface plane)
+  Surface-plane
  
 </details>
 
@@ -36,14 +35,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+  https://sushimania.co.uk/
+  Een sushi website uit de UK, waarvan ik denk dat het wel moet lukken voor mij om dat na te maken...
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
+  Homepage
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
+  Menu
+  Een pagina waarvan ik denk dat het moeilijk is, maar ook
+  doormiddel van hulp wel moet lukken en tegelijkertijd handig kan zijn voor mijn buitenschoolse activiteiten (ik werk in horeca)
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
  
 </details>
@@ -56,7 +58,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen:
+  Ik was niet aanwezig bij de eerste twee werkgroepen, daarom heb ik zelf gekeken naar de website. wat mij opvalt is dat ze voor een groot gedeelte de website visueel hebben versterkt is door images, alles is image, dus wellicht wil ik door de surface plane richting hier veel verbeteringen in maken.
 
 </details>
 
