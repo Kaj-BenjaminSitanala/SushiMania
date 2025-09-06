@@ -24,7 +24,15 @@ body {
 header {
   background-color: var(--back-grey); 
   color: white;
-  padding: 1rem;
+  padding: 1.5rem;
+  position: fixed;
+  width: 100vw;
+  z-index: 1;
+}
+
+#logo {
+  width: 200px;
+  margin-right: 200px;
 }
 
 header h1 {
@@ -36,7 +44,8 @@ nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 2rem;
+  align-items: center;
 }
 
 nav a {
@@ -51,6 +60,8 @@ nav a:hover {
 
 #book_table {
     background-color: #1e1e1e;
+    padding: 1.2em;
+    border-radius: 1em;
 }
 
 #book_table:hover {
@@ -60,7 +71,8 @@ nav a:hover {
 
 #order_now {
     background-color: var(--sushi-red);
-    margin-right: 0; /* Ask teacher how this works again, I forgot */
+    padding: 1.2em;
+    border-radius: 1em;
 }
 
 #order_now:hover {
