@@ -1,0 +1,179 @@
+/* Reset some default browser styles by changing all (*) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Color usage */
+:root {
+    --off-white: #fafafa;
+    --sushi-red: #a72d2c;
+    --back-grey: #313131;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: var(--back-grey);
+  background-color: var(--off-white);
+}
+
+/* Header & Navigation */
+header {
+  background-color: var(--back-grey); 
+  color: white;
+  padding: 1rem;
+}
+
+header h1 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: var(--sushi-red);
+}
+
+#book_table {
+    background-color: #1e1e1e;
+}
+
+#book_table:hover {
+    background-color: var(--off-white);
+    color: var(--back-grey);
+}
+
+#order_now {
+    background-color: var(--sushi-red);
+    margin-right: 0; /* Ask teacher how this works again, I forgot */
+}
+
+#order_now:hover {
+    background-color: #1e1e1e;
+    color: var(--off-white);
+}
+
+/* Main sections */
+main {
+  padding: 2rem 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+section h2 {
+  color: var(--sushi-red);
+  margin-bottom: 0.5rem;
+}
+
+/* Articles (menu items, etc.) */
+article {
+  background-color: white;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Hero slidemenu*/
+.hero {
+  position: relative;
+  height: 90vh; /* nearly full screen in view height */
+  overflow: hidden;
+}
+
+.slides {
+  list-style: none;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.slide {
+  position: absolute;
+  inset: 0; /* full container apperantly, ask how this works (got it from the internet) */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.slide h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.slide p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  background-color: var(--sushi-red);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: var(--sushi-red);
+}
+
+/* Welcome menu - 3 items*/
+
+.welcome_btn {
+  display: inline-flex;
+  flex-direction: column;   /* putting the icon above the text */
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: var(--sushi-red);
+  padding: 1rem;
+  border-radius: 8px;
+  width: 120px;  /* fixed size, but later put it in relative size */
+  text-align: center;
+  transition: background 0.3s ease;
+}
+
+.welcome_btn:hover {
+  background-color: var(--sushi-red);
+  color: white;
+}
+
+.welcome_btn .icon {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 0.5rem; /* spacing between icon + text TUNE IT LATER */
+}
