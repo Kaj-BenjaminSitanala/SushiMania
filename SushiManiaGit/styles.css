@@ -134,6 +134,16 @@ section h2 {
   background: url(images/hero1.jpg);
 }
 
+/*
+.slide li:nth-of-type(2) {
+  background: url(images/hero2.jpg);
+}
+
+.slide li:nth-last-of-type(3) {
+  background: url(images/hero3.jpg);
+}
+*/
+
 .slide h2 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
