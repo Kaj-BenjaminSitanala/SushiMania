@@ -21,8 +21,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   #### Je startniveau:
   Rood
   #### Je focus:
-  Surface-plane
- 
+  Responsiveness 
 </details>
 
 
