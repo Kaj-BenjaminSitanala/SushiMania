@@ -168,10 +168,16 @@ section h2 {
 
 /* Welcome menu - 3 items*/
 .welcome {
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  height: 30vh;
+
 }
 
 .welcome_btn {
+  margin-top: 1em;
   display: inline-flex;
   flex-direction: column;   /* putting the icon above the text */
   align-items: center;
@@ -179,8 +185,8 @@ section h2 {
   text-decoration: none;
   color: var(--sushi-red);
   padding: 1rem;
-  border-radius: 8px;
-  width: 120px;  /* fixed size, but later put it in relative size */
+  border-radius: 0;
+  width: 8em;  /* fixed size, but later put it in relative size (done) */
   text-align: center;
   transition: background 0.3s ease;
 }
@@ -191,7 +197,7 @@ section h2 {
 }
 
 .welcome_btn .icon {
-  width: 32px;
-  height: 32px;
+  width: 5em;
+  height: 5em;
   margin-bottom: 0.5rem; /* spacing between icon + text TUNE IT LATER */
 }
