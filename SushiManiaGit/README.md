@@ -45,7 +45,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   #### Screenshot(s) van de tweede pagina (small screen):
   Menu
   Een pagina waarvan ik denk dat het moeilijk is, maar ook
-  doormiddel van hulp wel moet lukken en tegelijkertijd handig kan zijn voor mijn buitenschoolse activiteiten (ik werk in horeca)
+  doormiddel van hulp wel moet lukken en tegelijkertijd handig kan zijn voor mijn buitenschoolse activiteiten (ik werk in horeca).
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
  
 </details>
@@ -58,8 +58,21 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Ik was niet aanwezig bij de eerste twee werkgroepen, daarom heb ik zelf gekeken naar de website. wat mij opvalt is dat ze voor een groot gedeelte de website visueel hebben versterkt is door images, alles is image, dus wellicht wil ik door de surface plane richting hier veel verbeteringen in maken.
+  Bevindingen ScreenReader:
+  Op de eerste pagina van mijn website zijn meeste linkjes logisch, behalve de drie knoppen in de Welcome section van de pagina, hierbij zijn 3 knoppen met als knop een icon en een lapje text die de knop beschrijft, maar de icons zijn ook linkjes die als alt text alleen wat er weergegeven wordt aangeeft. Dus voor de screenreader is het hier handiger om per link de img en de p in 1 link te zetten met 1 omschrijving van de link.
 
+  Voornamelijk op mijn 2<sup>e</sup> pagina (het menu) is het erg lastig navigeren door de vele optie's én omdat elke zin een heading is, dus als je door de headings heen gaat leest hij elke zin voor en elke prijs en elke beschrijving.
+
+  Ook de besturing door het menu heen, met de verschillende opties is erg groot en een volledige lijst als navigatie.
+
+  Ook de 'Mild' en de 'Vegetarian' is aangegeven met kleur (en omdat dat ook als heading is aangegeven) kan het erg verwarrend zijn. Ik ging er met de screenreader door (door de headings) en hij zegt bij elke pagina van het menu eerst mild en vegetarisch als aanwijzing dat rood mild betekent en groen vegetarisch. De kleuren worden niet aangegeven in de screenreader en bij elke optie die vegetarisch is wordt het ook niet aangegeven, dus hier zit ook nog verbetering in. Even gedouble checked bij studentassistent en inderdaad alle text is in headings tot en met heading 6.
+
+  Bevindingen WCAG Checklist:
+<img src="./readme-images/wcag_1.JPG" width="375px" alt="Scan van WCAG Checklist's eerste bladzijde">
+<img src="./readme-images/wcag_2.JPG" width="375px" alt="Scan van WCAG Checklist's tweede blz.">
+<img src="./readme-images/wcag_3.JPG" width="375px" alt="Scan van WCAG Checklist's derde blz.">
+<img src="./readme-images/wcag_4.JPG" width="375px" alt="Scan van WCAG Checklist's vierde blz.">
+<img src="./readme-images/wcag_5.JPG" width="375px" alt="Scan van WCAG Checklist's vijfde blz.">
 </details>
 
 
