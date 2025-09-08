@@ -131,7 +131,7 @@ section h2 {
 
 .slide.active {
   opacity: 1;
-  background: url(images/hero1.jpg);
+  background-image: url(images/hero1.jpg);
 }
 
 /*
@@ -167,6 +167,9 @@ section h2 {
 }
 
 /* Welcome menu - 3 items*/
+.welcome {
+  justify-content: center;
+}
 
 .welcome_btn {
   display: inline-flex;
