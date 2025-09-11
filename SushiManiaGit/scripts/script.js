@@ -1,6 +1,15 @@
 // JavaScript Document
 console.log("hi");
 
+// Hamburger menu
+
+const hamburgerIcon = document.getElementById('hamburger-icon');
+  const navList = document.getElementById('menu');
+
+  hamburgerIcon.addEventListener('click', () => {
+    navList.classList.toggle('open');
+  });
+  
 // SlideMenu Autoslide from google AI, ask how this works to teacher
 const slides = document.querySelectorAll('.slide');
 let current = 0;
@@ -19,4 +28,5 @@ function nextSlide() {
 showSlide(current);
 
 // Change slide every 5 seconds
-setInterval(nextSlide, 5000);
+setInterval(nextSlide, 7000);
+

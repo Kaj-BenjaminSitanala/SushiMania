@@ -9,9 +9,14 @@
 <body>
   
   <header>
-      <h1></h1>
+      <h1 class="visually-hidden">Welcome to SushiMania</h1>
     <nav>
-      <ul>
+      <div id="hamburger-icon" class="hamburger-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+      <ul id="menu" class="nav-list">
         <img id="logo" src="images/logo.png" alt="Sushimania logo">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About us</a></li>
@@ -31,67 +36,59 @@
     <ul class="slides">
         <li class="slide active">
         <h2>Bottomless Menu</h2>
-        <p>Eat in Only. 2 Persons Minimum.
-        Children up to 120cm Tall Half Price
-        Except WHETSTONE branch
-        (£28.80 per person)
+        <p>Check out our bottomless menu if you eat in at our locations!
         </p>
-        <a href="#menu" class="btn">Explore More</a>
+        <a href="#menu" class="btn">Explore More <span class="visually-hidden">of our bottomless menu.</span></a>
         </li>
 
         <li class="slide">
-        <h2>Collection Order 20% Discount</h2>
-        <p>Excludes Set Dishes, Desserts & Drinks.
-        The 20% discount only applies to orders for collection placed on our website.
-        Each time you order online you earn points.
-        For every £1.00 spent, you’ll receive one point and each point is equivalent to 5p.
-        Loyalty points can only be used against future online orders placed on this website.
+        <h2>20% Loyalty Discount</h2>
+        <p>Each time you order online at our website you earn points.
         </p>
-        <a href="#menu" class="btn">Learn more</a>
+        <a href="#menu" class="btn">Learn more <span class="visually-hidden">our 20% loyalty discount</span></a>
         </li>
 
         <li class="slide">
         <h2>1/2 Price All Day Every Day</h2>
-        <p>Eat In & A La Carte Menu only.
-        Exculdes Set Dishes, Desserts & Drinks
-        Except WHETSTONE branch (40% off All Day Every day)&
-        NOTTINGHAM no half price after 5pm on Friday & Saturday
-        READING no half price after 6pm on Friday and Saturday</p>
-        <a href="#offers" class="btn">Learn more</a>
+        <p>Get 50% off when you eat in at our locations.</p>
+        <a href="#offers" class="btn">Learn more <span class="visually-hidden">about our half priced items.</span></a>
         </li>
 
         <li class="slide">
         <h2>Deliveroo</h2>
         <p>20% off for orders over 20 pounds from 1st June 2025</p>
-        <a href="#contact" class="btn">PROMOTION</a>
+        <a href="#contact" class="btn">Deliveroo Promo!</a>
         </li>
     </ul>
     </section>
 
-    <section class="welcome" aria-labelledby="hero-title">
+    <article class="welcome">
       <img src=".//images/logo_half.png" alt="SushiMania logo">
-      <p>We offer traditional Japanese cuisine ranging from sashimi, sushi, traditional & modern makis.<br> As well as grilled seafoods & meats, tempuras, rice and noodles.</p>
-      <p>All at affordable prices!</p>
-      <div>
+      <h2>Welcome to SushiMania!</h2>
+      <p>We offer traditional Japanese cuisine ranging from sashimi, sushi, traditional & modern makis.
+       As well as grilled seafoods & meats, tempuras, rice and noodles.
+      <br><strong>All at affordable prices!</strong></p>
+
+      <section class="welcome">
       <a href="#orderonline" class="welcome_btn">
-        <img src="images/welcome-icon-01.png" alt="" class="icon">
-         Order
+        <img src="images/welcome-icon-01.png" alt="Icon of a sushi" class="icon">
+         <strong>Order</strong>
         </a>
       <a href="#menu" class="welcome_btn">
-        <img src="images/welcome-icon-02.png" alt="" class="icon">
-        Menu
+        <img src="images/welcome-icon-02.png" alt="Icon of a platter of variable sushi" class="icon">
+        <strong>Menu</strong>
       </a>
       <a href="#location" class="welcome_btn">
-        <img src="images/welcome-icon-03.png" alt="" class="icon">
-        Location
+        <img src="images/welcome-icon-03.png" alt="Icon of a map" class="icon">
+        <strong>Location</strong>
       </a>
-    </div>
     </section>
+    </article>
     
-    <section aria-labelledby="about-title">
+    <article>
       <h2>Why Choose Us?</h2>
       <p>Our ingredients are guaranteed fresh and delivered daily to ensure every dish is served with the highest quality food to every table. <em>Book a table now or order takeaway and enjoy the best Japanese cuisine can offer!</em></p>
-    </section>
+    </article>
 
   </main>
 

@@ -39,13 +39,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Homepage
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="./readme-images/pagina-1.png" width="375px" alt="homepage met een hamburger menu, een slide menu/hero images.">
+  <img src="./readme-images/pagina-2.png" width="375px" alt="dan nog een hero met een welcome en drie knop menu.">
+  <img src="./readme-images/pagina-3.png" width="375px" alt="een klein tekst sectie met een knop">
+  <img src="./readme-images/pagina-4.png" width="375px" alt="een uitgebreidde google map met een menu om de map aan te passen, deze wordt lastig.">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Menu
   Een pagina waarvan ik denk dat het moeilijk is, maar ook
   doormiddel van hulp wel moet lukken en tegelijkertijd handig kan zijn voor mijn buitenschoolse activiteiten (ik werk in horeca).
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="./readme-images/paginatwee-1.png" width="375px" alt="navigatie is beetje veranderd en de pagina heeft een groot menu">
+  <img src="./readme-images/paginatwee-2.png" width="375px" alt="het menu heeft een uitzetbaar slidemenu waarmee je het restaurantmenu weergeeft per pagina/categorie.">
  
 </details>
 
