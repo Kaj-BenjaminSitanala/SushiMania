@@ -277,15 +277,15 @@ section h2 {
   background-size: 100%;
 }
 
-/*
-.slide li:nth-of-type(2) {
-  background: url(images/hero2.jpg);
+li.slide:nth-of-type(2) {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./images/hero2.jpg'); /* Nog niet goed gepotisioneerd */
+  background-size: 100%;
 }
 
-.slide li:nth-last-of-type(3) {
-  background: url(images/hero3.jpg);
+li.slide:nth-of-type(3) {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./images/hero3.jpg');
+  background-size: 100%;
 }
-*/
 
 .slide h2 {
   font-size: 2.5rem;
@@ -313,6 +313,7 @@ section h2 {
 article {
   padding: 1rem;
 }
+
 /* Welcome article - 3 buttons*/
 .welcome {
   padding-top: 2rem;
@@ -354,4 +355,36 @@ section.welcome {
   width: 5em;
   height: 5em;
   margin-bottom: 0.5rem; /* spacing between icon + text TUNE IT LATER */
+}
+
+/* Why article */
+
+article:last-of-type {
+  background-image: url(./images/hero3.jpg);
+  height: max-content;
+  max-width: 100%;
+}
+
+article:last-of-type section {
+  padding: 2rem;
+  display: flexbox;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  background-color: var(--off-white);
+  border-radius: 1em;
+  margin: 1rem;
+}
+
+article:last-of-type h2 {
+  margin-bottom: 1rem;
+}
+
+article:last-of-type p {
+  margin-bottom: 2rem;
+
+}
+
+article:last-of-type a.btn {
+  padding: 1rem;
 }
