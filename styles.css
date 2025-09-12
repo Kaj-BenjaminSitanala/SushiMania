@@ -245,15 +245,55 @@ section h2 {
   color: var(--sushi-red);
   margin-bottom: 0.5rem;
 }
+/* Hero slide - zelf proberen te maken */
+article.slideMenu {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
 
+article.slideMenu ul {
+  display: flex;
+  overflow-x: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: auto;
 
-/* Hero slidemenu*/
+  list-style: none;
+  width: 100%;
+}
+
+article.slideMenu ul li {
+  flex-basis: 100%;
+  flex-shrink: 0;
+  scroll-snap-align: center;
+}
+
+article.slideMenu ul li:nth-of-type(1) {
+  background-image: url(./images/hero1.jpg);
+}
+
+section.slideMenu {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+
+section.slideMenu a {
+  text-decoration: none;
+}
+
+/* Hero slidemenu eerste
 
 .hero {
   position: relative;
   height: 50vh;
   width: 100%;
   overflow: hidden;
+}
+
+.hero a {
+  z-index: 20;
+  color: white;
 }
 
 .slides {
@@ -267,7 +307,7 @@ section h2 {
 
 .slide {
   position: absolute;
-  inset: 0; /* full container apperantly, ask how this works (got it from the internet) */
+  inset: 0;  full container apperantly, ask how this works (got it from the internet) 
   background-size: cover;
   background-position: center;
   display: flex;
@@ -283,23 +323,24 @@ section h2 {
 
 .slide.active {
   opacity: 1;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./images/hero1.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./images/hero1.jpg');
   background-size: 100%;
 }
 
 li.slide:nth-of-type(2) {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./images/hero2.jpg'); /* Nog niet goed gepotisioneerd */
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./images/hero2.jpg'); 
   background-size: 100%;
 }
 
 li.slide:nth-of-type(3) {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./images/hero3.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./images/hero3.jpg');
   background-size: 100%;
 }
 
 .slide h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
+  color: var(--off-white);
 }
 
 .slide p {
@@ -318,6 +359,7 @@ li.slide:nth-of-type(3) {
 .btn:hover {
   background-color: var(--sushi-red);
 }
+*/
 
 /* articles */
 article {
