@@ -246,7 +246,7 @@ section h2 {
   margin-bottom: 0.5rem;
 }
 /* Hero slide - zelf proberen te maken */
-article.slideMenu {
+/*article.slideMenu {
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -280,9 +280,9 @@ section.slideMenu {
 
 section.slideMenu a {
   text-decoration: none;
-}
+} */
 
-/* Hero slidemenu eerste
+/* Hero slidemenu eerste*/
 
 .hero {
   position: relative;
@@ -307,7 +307,7 @@ section.slideMenu a {
 
 .slide {
   position: absolute;
-  inset: 0;  full container apperantly, ask how this works (got it from the internet) 
+  inset: 0;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -359,7 +359,7 @@ li.slide:nth-of-type(3) {
 .btn:hover {
   background-color: var(--sushi-red);
 }
-*/
+
 
 /* articles */
 article {
