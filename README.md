@@ -87,14 +87,14 @@ https://kaj-benjaminsitanala.github.io/SushiMania/
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="./readme-images/Fullpage.png" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="./readme-images/DynamicElements.png" width="375px" alt="Een header met een dropdown hamburger navigatie en een slide menu met een achtergrond die automatisch wisselt en de optie om met knoppen te besturen.">
+ 
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
-
+  <img src="./readme-images/DynamicElementMap.png" width="375px" alt="Een google maps met een besturing (knoppen) om de plaatsen te veranderen.">
 </details>
 
 
@@ -109,6 +109,12 @@ https://kaj-benjaminsitanala.github.io/SushiMania/
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+  Het ging over het algemeen heel soepel met de homepage, ik heb de dingen die ik vorige keer (twee jaar terug alweer) mis deed flink vermeden: De dingen die ik vermeed zijn onder andere 'Display: Grid', positioneren vooral door margins te gebruiken, widths buiten het scherm door 'vw' te gebruiken (dit gaat nogsteeds soms, dus goed op letten).
+  <img src="./readme-images/Screenshot - Width bug.PNG" alt="Een screenshot van de width buiten het scherm, ookal heb ik horzintaal scrollen (x-overlfow) op hidden gezet.">
+
+  Verder heb ik heel erg geprobeerd om mijn website snel af te maken, niet gehaast, maar er gewoon echt veel aan te zitten. Ik heb de eerste keer (de vorige keer) veel problemen gehad met tijdsnood en daardoor heb ik toen niks in deze readme gezet, allemaal opstapelende problemen. 
+
+  Verder begrijp ik code in het algemeen beter dan vorige keer, wellicht door meer tijd (dit is mijn enige vak op het moment).
 
   ### Agenda voor meeting
   samen met je groepje opstellen
