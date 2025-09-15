@@ -1,21 +1,87 @@
 <!DOCTYPE html>
-<html lang="en-US">
-	
+
+<html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="author" content="jouw naam">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<title>Howdy FED2526</title>
-	
-	<link href="styles/style.css" rel="stylesheet">
-	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sushimania - Menu</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-	<h1>Howdy FED2526</h1>
 
-	<script defer src="scripts/script.js"></script>
+  <header>
+      <h1 class="visually-hidden">Welcome to SushiMania</h1>
+    <nav>
+      <div id="hamburger-icon" class="hamburger-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+      <ul id="menu" class="nav-list">
+        <img id="logo" src="images/logo.png" alt="Sushimania logo">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-us">About us</a></li>
+        <li><a href="./menu.html">Menu</a></li>
+        <li><a href="locations">Locations</a></li>
+        <li><a href="gallery">Gallery</a></li>
+        <li><a href="contact">Contact us</a></li>
+        <li><a href="offers">Offers</a></li>
+
+      </ul>
+      <section>
+        <a id="book_table" href="contact">Book a table</a>
+        <a id="order_now" href="order-now">Order online</a>
+      </section>
+    </nav>
+  </header>
+
+  <main>
+<div id="myBtnContainer">
+  <button class="btnMenu active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btnMenu" onclick="filterSelection('cars')"> Cars</button>
+  <button class="btnMenu" onclick="filterSelection('animals')"> Animals</button>
+  <button class="btnMenu" onclick="filterSelection('fruits')"> Fruits</button>
+  <button class="btnMenu" onclick="filterSelection('colors')"> Colors</button>
+</div>
+
+<!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+<div class="container">
+  <div class="filterDiv cars">BMW</div>
+  <div class="filterDiv colors fruits">Orange</div>
+  <div class="filterDiv cars">Volvo</div>
+  <div class="filterDiv colors">Red</div>
+  <div class="filterDiv cars">Ford</div>
+  <div class="filterDiv colors">Blue</div>
+  <div class="filterDiv animals">Cat</div>
+  <div class="filterDiv animals">Dog</div>
+  <div class="filterDiv fruits">Melon</div>
+  <div class="filterDiv fruits animals">Kiwi</div>
+  <div class="filterDiv fruits">Banana</div>
+  <div class="filterDiv fruits">Lemon</div>
+  <div class="filterDiv animals">Cow</div>
+</div>
+  </main>
+    <footer>
+
+    <section id="socials">
+      <a href="http://www.instagram.com">
+        <img src="./images/socials-01.png" alt="instagram icon, link to our instagram account">
+      </a>
+      <a href="http://www.facebook.com">
+        <img src="./images/socials-02.png" alt="facebook icon, link to our facebook account">
+      </a>
+      <a href="http://www.x.com">
+        <img src="./images/socials-04.png" alt="X icon, link to our X account">
+      </a>
+      <a href="http://www.tiktok.com">
+        <img src="./images/socials-03.png" alt="tik-tok icon, link to our tik tok account">
+      </a>
+    </section>
+    <p>&copy; 2025 Sitanala.</p>
+
+    </footer>
+
+<script src="./scripts/script.js"></script>
 </body>
-	
-</html>
