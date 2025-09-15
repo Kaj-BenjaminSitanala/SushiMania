@@ -76,7 +76,7 @@ header {
   padding: 1rem;
 }
 
-#logo {
+nav img {
   width: 18em;
   margin-right: 200px;
 }
@@ -104,31 +104,29 @@ nav a:hover {
   color: var(--sushi-red);
 }
 
-#book_table {
-    background-color: #1e1e1e;
+nav section a {
+    background-color: var(--back-grey);
     padding: 1em;
     border-radius: 1em;
 }
 
-#book_table:hover {
+nav section a:hover {
     background-color: var(--off-white);
     color: var(--back-grey);
 }
 
-#order_now {
+nav a:last-of-type {
     background-color: var(--sushi-red);
     padding: 1em;
     border-radius: 1em;
 }
 
-#order_now:hover {
-    background-color: #1e1e1e;
+nav a:last-of-type:hover {
+    background-color: var(--back-grey);
     color: var(--off-white);
 }
 
 /* Header & Navigation for mobiles*/
-
-  @media (max-width: 768px) {
     .hamburger-icon {
       display: block;
       cursor: pointer;
@@ -177,7 +175,7 @@ nav a:hover {
       transform: translateX(0);
     }
 
-    #logo {
+  header img {
       margin-bottom: 1rem;
     }
 
@@ -185,24 +183,9 @@ nav a:hover {
       margin-bottom: 1.5rem;
     }
 
-    #book_table {
-    background-color: #1e1e1e;
-    padding: 1em;
-    border-radius: 1em;
-
-  }
-
-    #order_now {
-    background-color: var(--sushi-red);
-    padding: 1em;
-    border-radius: 1em;
-  }
-
-
-  }
 /* Header & Navigation for large-desktop*/
 
-@media screen and (min-width: 1440px) {
+@media (width > 1440px) {
   .hamburger-icon {
     display: none;
   }
@@ -382,7 +365,7 @@ article {
   width: 10em;
 }
 
-section.welcome {
+section.welcome section {
   display: flex;
   flex-direction: row;
 }

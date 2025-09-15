@@ -119,11 +119,16 @@ https://kaj-benjaminsitanala.github.io/SushiMania/
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | student 1      
+  Verbeterpunten in schoonheid... Wat moet ik veranderen (ID's, classes, mediaqueries)
+
+  | student 2
+  Wat valt nog niet te snappen.
+
+  | student 3
+  
+
+  | student 3
 
 
   ### Verslag van meeting
