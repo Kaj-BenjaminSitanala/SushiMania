@@ -58,7 +58,7 @@ https://kaj-benjaminsitanala.github.io/SushiMania/
 
 ## Toegankelijkheidstest 1/2 (week 1)
 
-<details>
+<details open>
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
@@ -83,7 +83,7 @@ https://kaj-benjaminsitanala.github.io/SushiMania/
 
 ## Breakdownschets (week 1)
 
-<details>
+<details open>
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
@@ -103,7 +103,7 @@ https://kaj-benjaminsitanala.github.io/SushiMania/
 
 ## Voortgang 1 (week 2)
 
-<details>
+<details open>
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
