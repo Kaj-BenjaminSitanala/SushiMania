@@ -126,7 +126,7 @@ nav a:last-of-type:hover {
     color: var(--off-white);
 }
 
-/* Header & Navigation for mobiles*/
+/* Header & Navigation*/
     .hamburger-icon {
       display: block;
       cursor: pointer;
@@ -181,42 +181,8 @@ nav a:last-of-type:hover {
 
     li {
       margin-bottom: 1.5rem;
-    }
+    } 
 
-/* Header & Navigation for large-desktop*/
-
-@media (width > 1440px) {
-  .hamburger-icon {
-    display: none;
-  }
-
-  .nav-list {
-    display: flex;
-    justify-content: space-around;
-    }
-  
-    #book_table {
-    background-color: #1e1e1e;
-    padding: 1.2em;
-    border-radius: 1em;
-}
-
-#book_table:hover {
-    background-color: var(--off-white);
-    color: var(--back-grey);
-}
-
-#order_now {
-    background-color: var(--sushi-red);
-    padding: 1.2em;
-    border-radius: 1em;
-}
-
-#order_now:hover {
-    background-color: #1e1e1e;
-    color: var(--off-white);
-}
-}
 
 /* Main sections */
 main {
@@ -229,41 +195,6 @@ section h2 {
   margin-bottom: 0.5rem;
 }
 /* Hero slide - zelf proberen te maken */
-/*article.slideMenu {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-}
-
-article.slideMenu ul {
-  display: flex;
-  overflow-x: hidden;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: auto;
-
-  list-style: none;
-  width: 100%;
-}
-
-article.slideMenu ul li {
-  flex-basis: 100%;
-  flex-shrink: 0;
-  scroll-snap-align: center;
-}
-
-article.slideMenu ul li:nth-of-type(1) {
-  background-image: url(./images/hero1.jpg);
-}
-
-section.slideMenu {
-  display: flex;
-  justify-content: center;
-  gap: 2em;
-}
-
-section.slideMenu a {
-  text-decoration: none;
-} */
 
 /* Hero slidemenu eerste*/
 
@@ -350,7 +281,7 @@ article {
 }
 
 /* Welcome article - 3 buttons*/
-.welcome {
+main section:nth-of-type(2) {
   padding-top: 1rem;
   padding-bottom: 1rem;
   display: flex;
@@ -361,16 +292,16 @@ article {
   text-align: center;
 }
 
-.welcome img {
+main section:nth-of-type(2) img {
   width: 10em;
 }
 
-section.welcome section {
+main section:nth-of-type(2) section {
   display: flex;
   flex-direction: row;
 }
 
-.welcome_btn {
+main section:nth-of-type(2) section a {
   margin-top: 1em;
   display: inline-flex;
   flex-direction: column;
@@ -384,12 +315,12 @@ section.welcome section {
   text-align: center;
 }
 
-.welcome_btn:hover {
+main section:nth-of-type(2) section a:hover {
   background-color: var(--sushi-red);
   color: var(--off-white);
 }
 
-.welcome_btn .icon {
+main section:nth-of-type(2) section a img {
   width: 5em;
   height: 5em;
   margin-bottom: 0.5rem; /* spacing between icon + text TUNE IT LATER */
@@ -421,7 +352,7 @@ article:last-of-type p {
   margin-bottom: 2rem;
 }
 
-.smallBtn {
+main article p a  {
   text-decoration: none;
   color: var(--sushi-red);
   font-weight: bold;
@@ -452,7 +383,7 @@ footer h2 {
   padding-top: 2rem;
 }
 
-button {
+footer button {
   background-color: var(--back-grey);
   color: var(--off-white);
   cursor: pointer;
@@ -466,70 +397,28 @@ button {
   touch-action: manipulation;
 }
 
-button:not(:disabled):hover,
-button:not(:disabled):focus {
+footer button:not(:disabled):hover,
+footer button:not(:disabled):focus {
   outline: 0;
   background: var(--sushi-red);
   border-top-right-radius: 1em;
   border-top-left-radius: 1em;
 }
 
-#socials {
+footer section:last-of-type {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-#socials img {
+footer section:last-of-type img {
   width: 3em;
   margin: 1em;
 }
 
-#map {
+footer section:nth-of-type(2) {
   background-color: var(--sushi-red);
   padding-top: 1rem;
   padding-bottom: 1rem;
   margin-top: 0;
-}
-
-/* menuPage */
-
-.container {
-  overflow: hidden;
-}
-
-.filterDiv {
-  float: left;
-  background-color: #2196F3;
-  color: #ffffff;
-  width: 100px;
-  line-height: 100px;
-  text-align: center;
-  margin: 2px;
-  display: none; /* Hidden by default */
-}
-
-/* The "show" class is added to the filtered elements */
-.show {
-  display: block;
-}
-
-/* Style the buttons */
-.btnMenu {
-  border: none;
-  outline: none;
-  padding: 12px 16px;
-  background-color: #f1f1f1;
-  cursor: pointer;
-}
-
-/* Add a light grey background on mouse-over */
-.btnMenu:hover {
-  background-color: #ddd;
-}
-
-/* Add a dark background to the active button */
-.btnMenu.active {
-  background-color: #666;
-  color: white;
 }

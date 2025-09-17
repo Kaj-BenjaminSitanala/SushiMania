@@ -126,10 +126,10 @@ https://kaj-benjaminsitanala.github.io/SushiMania/
   Wat valt nog niet te snappen.
 
   | student 3
-  
+  Breakdownschets nakijken
 
   | student 3
-
+  Minder nesten 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
