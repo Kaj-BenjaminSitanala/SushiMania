@@ -121,25 +121,38 @@ https://kaj-benjaminsitanala.github.io/SushiMania/
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      
-  Verbeterpunten in schoonheid... Wat moet ik veranderen (ID's, classes, mediaqueries)
+  | Lisa      
+  Hoe ga ik de slider op de homepage aanpakken?
+  Breakdownschets nagaan
+  De divs / classes op sommige plekken, correct gebruikt of niet?
+  Kijken of mijn Html semantisch correct is
+  Css  opzet checken
+  Ik wil minder gaan nesten en onnodige divs gbruiken, hoe pak ik dit aan
 
-  | student 2
-  Wat valt nog niet te snappen.
-
-  | student 3
+  | Kaa
   Breakdownschets nakijken
+  Html structuur controleren of het matcht met breakdownschets
+  Groenlicht krijgen voor css
 
-  | student 3
-  Minder nesten 
+  | Robin
+  *
+  Breakdownschets nakijken
+  Html structuur controleren of het matcht met breakdownschets
+  Groenlicht krijgen voor css
+
+  | Kaj
+  Minder nesten - inline style
+  Verbeterpunten in schoonheid... Wat moet ik veranderen (ID's, classes, mediaqueries)
+  Wat valt nog niet te snappen in mijn code...
+  Breakdownschets nakijken en verbeteren.
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - 
+  - 
+  - 
+  - 
 
 </details>
 

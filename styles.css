@@ -184,82 +184,90 @@ h2 {
   margin-bottom: 0.5rem;
 }
 
-/* Hero slidemenu eerste*/
-
-main section:nth-child(1) {
-  position: relative;
-  height: 50vh;
-  width: 100%;
-  overflow: hidden;
-}
-
-main section:nth-child(1) li a {
-  z-index: 20;
-  color: white;
-}
-
-main section:nth-child(1) ul {
-  list-style: none;
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  position: relative;
-}
-
-main section:nth-child(1) ul li {
-  position: absolute;
-  inset: 0;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  text-align: center;
-  padding: 2rem;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-}
-
-main section:nth-child(1) ul li.active {
-  opacity: 1;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./images/hero1.jpg');
-  background-size: 100%;
-}
-
-main section:nth-child(1) li:nth-of-type(2) {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./images/hero2.jpg'); 
-  background-size: 100%;
-}
-
-main section:nth-child(1) li:nth-of-type(3) {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./images/hero3.jpg');
-  background-size: 100%;
-}
-
-main section:nth-child(1) ul li h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+/* Hero slidemenu carousel*/
+main section:nth-of-type(1) li h2 {
   color: var(--off-white);
 }
 
-main section:nth-child(1) ul li p {
-  font-size: 1.2rem;
-  margin-bottom: 1.5rem;
+main section:nth-of-type(1) ul {
+  width: 100vw;
+  height: 50vh;
+  padding: 1em;
+  display: flex;
+  
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  
+  anchor-name: --my-carousel;
+  
+  scroll-marker-group: after;
 }
 
-main section:nth-child(1) li a {
-  background-color: var(--sushi-red);
-  color: white;
-  padding: 0.75rem 1.5rem;
-  text-decoration: none;
-  border-radius: 5px;
+main section:nth-of-type(1) li {
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  list-style-type: none;
+  background: linear-gradient(#000000b2, #000000b2), url(./images/hero1.jpg);
+  background-size: cover;
+
+  color: var(--off-white);
+  font-weight: bold;
+
+  flex: 0 0 100%;
+  
+  scroll-snap-align: center;
+  scrollbar-color: none;
 }
 
-main section:first-of-type li a:hover {
-  background-color: var(--sushi-red);
+main section:nth-of-type(1) li:nth-of-type(2) {
+  background: linear-gradient(#000000b2, #000000b2), url(./images/hero2.jpg);
+  background-size: cover;
+}
+
+main section:nth-of-type(1) li:nth-of-type(3) {
+  background: linear-gradient(#000000b2, #000000b2), url(./images/hero3.jpg);
+  background-size: cover;
+}
+
+main section:nth-of-type(1) ul::scroll-marker-group {
+  position: absolute;
+  position-anchor: --my-carousel;
+  top: calc(anchor(bottom) - 70px);
+  justify-self: anchor-center;
+
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+main section:nth-of-type(1) li::scroll-marker {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  border: 0.2em solid var(--off-white);
+  border-radius: 50%;
+}
+
+main section:nth-of-type(1) li::scroll-marker:target-current {
+  background-color: var(--off-white);
+}
+
+main section:nth-of-type(1) li a {
+    background-color: var(--sushi-red);
+    padding: 1em;
+    border-radius: 2em;
+    text-decoration: none;
+    color: var(--off-white);
+    margin-top: 1em;
+}
+
+main section:nth-of-type(1) li a:hover {
+    background-color: var(--off-white);
+    color: var(--back-grey);
 }
 
 /* Welcome article - 3 buttons*/
@@ -297,8 +305,10 @@ main section:nth-of-type(2) section a {
   border-radius: 0;
   width: 8em;
   text-align: center;
-    padding: 1rem;
+  padding: 1rem;
   height: max-content;
+
+  
 }
 
 main section:nth-of-type(2) section a:hover {
