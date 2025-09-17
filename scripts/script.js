@@ -3,7 +3,7 @@ console.log("hi");
 
 // Hamburger menu
 
-const hamburgerIcon = document.getElementById('hamburger-icon');
+const hamburgerIcon = document.querySelector("header nav div");
   const navList = document.getElementById('menu');
 
   hamburgerIcon.addEventListener('click', () => {

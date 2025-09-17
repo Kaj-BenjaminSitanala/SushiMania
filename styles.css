@@ -29,6 +29,7 @@
     --back-grey: #313131;
 }
 
+/* Van a11y */
 .visually-hidden {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
@@ -353,6 +354,11 @@ main article:last-of-type p a  {
   text-decoration: none;
   color: var(--sushi-red);
   font-weight: bold;
+  margin-top: 1rem;
+}
+
+main article:last-of-type p a img {
+  width: 1em;
 }
 
 /* iFrame googleMap + de Buttons */

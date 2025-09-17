@@ -149,10 +149,9 @@ https://kaj-benjaminsitanala.github.io/SushiMania/
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - 
-  - 
-  - 
-  - 
+  - AutoSlide kan in CSS niet met javascript. Author toevoegen in head, FaviCon terugzetten.
+  - SVG gebruiken voor social media iconen, vooral later makelijkker om die te veranderen van kleur.
+  - Screenreader tips voor control-option-u als lijst om mijn website te checken. p boven img, informatie altijd boven decoratie.
 
 </details>
 
