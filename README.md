@@ -87,7 +87,7 @@ https://kaj-benjaminsitanala.github.io/SushiMania/
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="./readme-images/Fullpage.png" width="375px" alt="breakdown van de hele pagina">
+  <img src="./readme-images/Fullpage-01.png" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
   <img src="./readme-images/DynamicElements.png" width="375px" alt="Een header met een dropdown hamburger navigatie en een slide menu met een achtergrond die automatisch wisselt en de optie om met knoppen te besturen.">

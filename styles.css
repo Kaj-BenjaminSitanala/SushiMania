@@ -29,7 +29,6 @@
     --back-grey: #313131;
 }
 
-/*Visually hidden*/
 .visually-hidden {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
@@ -94,18 +93,19 @@ nav ul {
   align-items: center;
 }
 
-nav a {
+header nav a {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  background-color: none;
 }
 
-nav a:hover {
+header nav a:hover {
   color: var(--sushi-red);
 }
 
 nav section a {
-    background-color: var(--back-grey);
+    background-color: var(--sushi-red);
     padding: 1em;
     border-radius: 1em;
 }
@@ -115,40 +115,29 @@ nav section a:hover {
     color: var(--back-grey);
 }
 
-nav a:last-of-type {
-    background-color: var(--sushi-red);
-    padding: 1em;
-    border-radius: 1em;
-}
-
-nav a:last-of-type:hover {
-    background-color: var(--back-grey);
-    color: var(--off-white);
-}
-
 /* Header & Navigation*/
-    .hamburger-icon {
+.hamburger-icon {
       display: block;
       cursor: pointer;
       padding: 10px;
-    }
+}
 
-    .hamburger-icon span {
+.hamburger-icon span {
       display: block;
       width: 30px;
       height: 4px;
       margin: 5px 0;
       background-color: white;
       transition: all 0.3s ease;
-    }
+}
 
-    nav {
+nav {
       display: flex;
       justify-content: space-between;
       align-items: center;
-    }
+}
 
-    .nav-list {
+.nav-list {
       display: none;
       list-style-type: none;
       padding: 0;
@@ -164,24 +153,24 @@ nav a:last-of-type:hover {
       transform: translateX(100%);
       z-index: 9999;
       padding: 2rem;
-    }
+}
 
-    nav section {
+nav section {
       gap: 1em;
-    }
+}
 
-    .nav-list.open {
+.nav-list.open {
       display: block;
       transform: translateX(0);
-    }
+}
 
-  header img {
+header img {
       margin-bottom: 1rem;
-    }
+}
 
-    li {
+li {
       margin-bottom: 1.5rem;
-    } 
+} 
 
 
 /* Main sections */
@@ -190,27 +179,26 @@ main {
   margin: 0;
 }
 
-section h2 {
+h2 {
   color: var(--sushi-red);
   margin-bottom: 0.5rem;
 }
-/* Hero slide - zelf proberen te maken */
 
 /* Hero slidemenu eerste*/
 
-.hero {
+main section:nth-child(1) {
   position: relative;
   height: 50vh;
   width: 100%;
   overflow: hidden;
 }
 
-.hero a {
+main section:nth-child(1) li a {
   z-index: 20;
   color: white;
 }
 
-.slides {
+main section:nth-child(1) ul {
   list-style: none;
   height: 100%;
   width: 100%;
@@ -219,7 +207,7 @@ section h2 {
   position: relative;
 }
 
-.slide {
+main section:nth-child(1) ul li {
   position: absolute;
   inset: 0;
   background-size: cover;
@@ -235,34 +223,34 @@ section h2 {
   transition: opacity 1s ease-in-out;
 }
 
-.slide.active {
+main section:nth-child(1) ul li.active {
   opacity: 1;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./images/hero1.jpg');
   background-size: 100%;
 }
 
-li.slide:nth-of-type(2) {
+main section:nth-child(1) li:nth-of-type(2) {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./images/hero2.jpg'); 
   background-size: 100%;
 }
 
-li.slide:nth-of-type(3) {
+main section:nth-child(1) li:nth-of-type(3) {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./images/hero3.jpg');
   background-size: 100%;
 }
 
-.slide h2 {
+main section:nth-child(1) ul li h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
   color: var(--off-white);
 }
 
-.slide p {
+main section:nth-child(1) ul li p {
   font-size: 1.2rem;
   margin-bottom: 1.5rem;
 }
 
-.btn {
+main section:nth-child(1) li a {
   background-color: var(--sushi-red);
   color: white;
   padding: 0.75rem 1.5rem;
@@ -270,14 +258,8 @@ li.slide:nth-of-type(3) {
   border-radius: 5px;
 }
 
-.btn:hover {
+main section:first-of-type li a:hover {
   background-color: var(--sushi-red);
-}
-
-
-/* articles */
-article {
-  padding: 1rem;
 }
 
 /* Welcome article - 3 buttons*/
@@ -290,6 +272,8 @@ main section:nth-of-type(2) {
   align-items: center;
   height: auto;
   text-align: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 main section:nth-of-type(2) img {
@@ -299,6 +283,7 @@ main section:nth-of-type(2) img {
 main section:nth-of-type(2) section {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 main section:nth-of-type(2) section a {
@@ -309,10 +294,11 @@ main section:nth-of-type(2) section a {
   justify-content: center;
   text-decoration: none;
   color: var(--sushi-red);
-  padding: 1rem;
   border-radius: 0;
   width: 8em;
   text-align: center;
+    padding: 1rem;
+  height: max-content;
 }
 
 main section:nth-of-type(2) section a:hover {
@@ -326,14 +312,16 @@ main section:nth-of-type(2) section a img {
   margin-bottom: 0.5rem; /* spacing between icon + text TUNE IT LATER */
 }
 
-/* Why article */
-
-article:last-of-type {
+/* Why section */
+main article:last-of-type  {
+  padding: 1rem;
   background-image: url(./images/hero3.jpg);
   height: max-content;
 }
 
-article:last-of-type section {
+main article:last-of-type section {
+  width: auto;
+  height: auto;
   padding: 1.8rem;
   display: flex;
   flex-direction: column;
@@ -344,15 +332,15 @@ article:last-of-type section {
   margin: 1rem;
 }
 
-article:last-of-type h2 {
+main article:last-of-type h2 {
   margin-bottom: 0.5rem;
 }
 
-article:last-of-type p {
+main article:last-of-type p {
   margin-bottom: 2rem;
 }
 
-main article p a  {
+main article:last-of-type p a  {
   text-decoration: none;
   color: var(--sushi-red);
   font-weight: bold;
