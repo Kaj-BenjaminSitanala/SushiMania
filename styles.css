@@ -137,7 +137,7 @@ nav {
       align-items: center;
 }
 
-.nav-list {
+nav ul {
       display: none;
       list-style-type: none;
       padding: 0;
@@ -159,7 +159,7 @@ nav section {
       gap: 1em;
 }
 
-.nav-list.open {
+nav ul.open {
       display: block;
       transform: translateX(0);
 }
@@ -189,15 +189,17 @@ main section:nth-of-type(1) li h2 {
   color: var(--off-white);
 }
 
+
 main section:nth-of-type(1) ul {
-  width: 100vw;
+  width: 100%;
   height: 50vh;
-  padding: 1em;
   display: flex;
   
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
-  
+  scroll-behavior: smooth;
+  transition: ease-in;
+
   anchor-name: --my-carousel;
   
   scroll-marker-group: after;
@@ -219,7 +221,6 @@ main section:nth-of-type(1) li {
   flex: 0 0 100%;
   
   scroll-snap-align: center;
-  scrollbar-color: none;
 }
 
 main section:nth-of-type(1) li:nth-of-type(2) {
@@ -307,8 +308,6 @@ main section:nth-of-type(2) section a {
   text-align: center;
   padding: 1rem;
   height: max-content;
-
-  
 }
 
 main section:nth-of-type(2) section a:hover {
