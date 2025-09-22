@@ -175,7 +175,6 @@ li {
       margin-bottom: 1.5rem;
 } 
 
-
 /* Main sections */
 main {
   max-width: 100%;
@@ -246,8 +245,8 @@ footer section:last-of-type img {
 }
 
 footer section:nth-of-type(2) {
-  background-color: var(--sushi-red);
   padding-top: 1rem;
-  padding-bottom: 1rem;
+  border-radius: 1em;
+  background-color: var(--sushi-red);
   margin-top: 0;
 }
