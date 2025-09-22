@@ -50,18 +50,138 @@
   </header>
 
   <main>
-    <details>
-      <summary>Choose your menu</summary>
-      <ul lang="Japanese">
-        <li><button>Uromaki</button></li>
-        <li><button>Futomaki</button></li>
-        <li><button>Nigiri</button></li>
-        <li><button>Sashimi</button></li>
-      </ul>
-    </details>
-    <section>
-      <ul>
-        <li>
+  <section>
+    <button>Choose your menu here</button>
+    <form hidden>
+        <label>
+          <input type="radio" name="menuPage" value="uramaki" checked>
+          Uramaki
+        </label>
+        <label>
+          <input type="radio" name="menuPage" value="futomaki">
+          Futomaki
+        </label>
+        <label>
+          <input type="radio" name="menuPage" value="nigiri">
+          Nigiri
+        </label>
+        <label>
+          <input type="radio" name="menuPage" value="sashimi">
+          Sashimi
+        </label>
+    </form>
+
+    <article>
+    <h2>Bottomless menu:</h2>
+    <p>£26.80 per person (Eat in 2 persons Minimum) - Except Whetstone branch £28.80.
+       ½ Price available all day every day (Except Whetstone branch 40% Off All Day Every day)
+       (Eat In & A La Carte Menu Only. Excludes drinks, dessert and set meals)</p>
+    </article>
+
+    <section id="uramaki">
+          <h2>Uramaki</h2>
+          <ol>
+            <li> 
+              <h3>Salmon & Avocado</h3>
+              <p>Uramaki with salmon and avocado</p>
+              <p>£6,40</p>
+            </li>
+            <li> 
+              <h3>Spicy Salmon & Cucumber</h3>
+              <p>Salmon & cucumber with spicy sauce</p>
+              <p>£8,60</p>
+            </li>
+            <li> 
+              <h3>Tuna & Avocado</h3>
+              <p>Suzuki x 3pcs</p>
+              <p>£6,20</p>
+            </li>
+            <li> 
+              <h3>Spicy Tuna & Cucumber</h3>
+              <p>Tuna and cucumber with spicy sauce</p>
+              <p>£6,80</p>
+            </li>
+            <li> 
+              <h3>Prawn Katsu & Avocado</h3>
+              <p>Deep fried prawns in breadcrumbs, wrapped in flying fish roe</p>
+              <p>£8,40</p>
+            </li>
+            <li> 
+              <h3>Crispy Duck & Cucumber</h3>
+              <p>rispy roasted duck, cucumber with hoi sin sauce</p>
+              <p>£10,60</p>
+            </li>
+          </ol>
+    </section>
+
+    <section id="futomaki">
+          <h2>Futomaki</h2>
+          <ol>
+            <li> 
+              <h3>California Roll</h3>
+              <p>Crabstick, prawn, avocado, cucumber, yellow pickles & egg</p>
+              <p>£8,40</p>
+            </li>
+            <li> 
+              <h3>Salmon & Avocado Roll</h3>
+              <p>Large seaweed rolls of rice filled with salmon & avocado</p>
+              <p>£9,60</p>
+            </li>
+            <li> 
+              <h3>Tempura Phoenix Roll</h3>
+              <p>Salmon, tuna & cucumber, deep fried in tempura batter</p>
+              <p>£5,20</p>
+            </li>
+            <li> 
+              <h3>Vegetarian California Roll</h3>
+              <p>Asparagus, avocado, cucumber, shiitake mushroom & pickle</p>
+              <p>£18,80</p>
+            </li>
+            <li> 
+              <h3>Sweet Potato Tempura Roll</h3>
+              <p>Large seaweed rolls of rice filled with sweet potatoes</p>
+              <p>£6,40</p>
+            </li>
+          </ol>
+    </section>
+
+    <section id="nigiri">
+          <h2>Nigiri</h2>
+          <ol>
+            <li> 
+              <h3>Salmon</h3>
+              <p>Sake</p>
+              <p>£5,40</p>
+            </li>
+            <li> 
+              <h3>Tuna</h3>
+              <p>Maguro</p>
+              <p>£4,60</p>
+            </li>
+            <li> 
+              <h3>Sea Bass</h3>
+              <p>Suzuki</p>
+              <p>£4,20</p>
+            </li>
+            <li> 
+              <h3>Yellowtail</h3>
+              <p>Hamachi</p>
+              <p>£5,80</p>
+            </li>
+            <li> 
+              <h3>Octopuss</h3>
+              <p>Tako</p>
+              <p>£5,40</p>
+            </li>
+            <li> 
+              <h3>Scallop (Seared)</h3>
+              <p>Hotate</p>
+              <p>£6,60</p>
+            </li>
+          </ol>
+    </section>
+
+    <section id="sashimi">
           <h2>Sashimi</h2>
           <ol>
             <li> 
@@ -95,9 +215,9 @@
               <p>£9,60</p>
             </li>
           </ol>
-        </li>
-      </ul>
     </section>
+
+  </section>
   </main>
 
   <footer>
@@ -138,5 +258,6 @@
   </footer>
 
 <script defer src="./scripts/script.js"></script>
+<script defer src="./scripts/scriptMenu.js"></script>
 </body>
 </html>

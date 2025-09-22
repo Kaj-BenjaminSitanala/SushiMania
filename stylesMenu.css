@@ -1,32 +1,134 @@
-section:nth-of-type(1) ol {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
 
+
+
+main {
+    background-color: var(--back-grey);
+    color: var(--off-white);
+    padding: 1em;
+}
+
+main section:nth-of-type(1) button {
+    background-color: var(--sushi-red);
+    border: none;
+    padding: 1.5em;
+    width: 100%;
+    color: white;
+    font-size: medium;
+
+}
+
+main section:nth-of-type(1) button:hover {
+    background-color: rgb(115, 0, 0);
+}
+
+section:nth-of-type(1) form.open {
+    display: flex;
+}
+
+section:nth-of-type(1) form {
+    flex-direction: column;
+    gap: 1em;
+    background-color: var(--sushi-red);
+    color: white;
+    padding: 1em;
+}
+
+section:nth-of-type(1) form input {
+    appearance: none;
+
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+
+    border: 2px solid var(--off-white);
+    transition: 0.2s all linear;
+    margin-right: 5px;
+
+    position: relative;
+    top: 4px;
+}
+
+section:nth-of-type(1) form input:checked {
+    border: 8px solid var(--off-white);
+}
+
+label {
+    padding: 1em;
+    border-radius: 1em;
+}
+
+section:has( [value="uramaki"]:checked  ) label:nth-of-type(1),
+section:has( [value="futomaki"]:checked  ) label:nth-of-type(2),
+section:has( [value="nigiri"]:checked  ) label:nth-of-type(3),
+section:has( [value="sashimi"]:checked  ) label:nth-of-type(4) {
+    background-color: var(--back-grey);
+    color: var(--off-white);
+} 
+
+section article {
+    padding-top: 2em;
     color: var(--off-white);
 }
 
-section:nth-of-type(1) ol li {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 1fr;
-
-    background-color: var(--back-grey);
+section article h2{
+    color: var(--off-white);
 }
 
-section:nth-of-type(1) ol li h3 {
+section:nth-of-type(1) section {
+    display: none;
+
+    background-color: var(--back-grey);
+    padding: 2em;
+}
+
+/* Van Sanne */
+section:has( [value="uramaki"]:checked  ) #uramaki,
+section:has( [value="futomaki"]:checked  ) #futomaki,
+section:has( [value="nigiri"]:checked  ) #nigiri,
+section:has( [value="sashimi"]:checked  ) #sashimi {
+  display: block;
+}
+
+section:nth-of-type(1) section h2{
+    color: var(--off-white);
+}
+
+
+section:nth-of-type(1) section ol {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(16em, 100%), 1fr));
+    column-gap: 1em;
+    color: var(--off-white);
+}
+
+section:nth-of-type(1) section ol li {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: max-content max-content;
+    column-gap: 2em;
+
+    border-right: solid var(--off-white) 0.2em;
+    padding: 1em;
+}
+
+section:nth-of-type(1) section ol li h3 {
     grid-column-start: 1;
 
     font-weight: bold;
 }
 
-section:nth-of-type(1) ol li p:nth-of-type(1) {
+section:nth-of-type(1) section ol li p:nth-of-type(1) {
     grid-column-start: 1;
     grid-row-start: 2;
 
-    font-weight: 500;
+    font-weight: 400;
 }
 
-section:nth-of-type(1) ol li p:nth-of-type(2) {
+section:nth-of-type(1) section ol li p:nth-of-type(2) {
     grid-column-start: 2;
+    grid-row-start: 1;
+
+    font-weight: bold;
 }
+
 
