@@ -117,13 +117,15 @@ nav section a:hover {
 }
 
 /* Header & Navigation*/
-.hamburger-icon {
+header nav button {
       display: block;
       cursor: pointer;
       padding: 10px;
+      background: none;
+      border-style: none;
 }
 
-.hamburger-icon span {
+header nav button span {
       display: block;
       width: 30px;
       height: 4px;

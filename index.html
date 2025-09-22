@@ -4,9 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Kaj-Benjamin Sitanala">
+  <meta name="description" content="FED course within Communication and Multi Media Design at Hogeschool van Amsterdam">
+  <meta name="keywords" content="HTML, CSS, JavaScript, Front-End, Course, Applied-Science, University, Sushi, Case-Study">
+
   <title>Sushimania - Home</title>
+
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheetHome" href="stylesHome.css">
+  <link rel="stylesheet" href="stylesHome.css">
+  <link rel="icon" href="images/favicon.svg" sizes="any" type="image/svg+xml">
+  
 </head>
 
 <body>
@@ -14,13 +21,16 @@
   <header>
       <h1 class="visually-hidden">Welcome to SushiMania</h1>
     <nav>
-      <div id="hamburger-icon" class="hamburger-icon">
+
+      <button aria-label="dropdown main navigation">
       <span></span>
       <span></span>
       <span></span>
-      </div>
-      <ul id="menu" class="nav-list">
-        <img src="images/logo.png" alt="Sushimania logo">
+      </button>
+
+      <ul>
+
+        <img src="images/logo.png" alt="Sushimania logo of fish illustrations surrounding the signature red circle of the Japanese flag creating what looks like a basic sushi roll.">
         <li><a href="index.html">Home</a></li>
         <li><a href="#">About us</a></li>
         <li><a href="./menu.html">Menu</a></li>
@@ -30,10 +40,12 @@
         <li><a href="#">Offers</a></li>
 
       </ul>
+
       <section>
         <a  href="#">Book a table</a>
         <a  href="#">Order online</a>
       </section>
+
     </nav>
   </header>
 
@@ -59,8 +71,8 @@
         </li>
         <li>
           <h2>Deliveroo</h2>
-          <p>20% off for orders over 20 pounds from 1st        June 2025</p>
-          <a href="contact">Deliveroo Promo!      </a>
+          <p>20% off for orders over 20 pounds from 1st June 2025</p>
+          <a href="contact">Deliveroo Promo!</a>
         </li>
       </ul>
     </section>
@@ -93,9 +105,13 @@
         <h2>Why Choose Us?</h2>
         <p>Our ingredients are guaranteed fresh and delivered daily to ensure every dish is 
         served with the highest quality food to every table. <strong>Book a table now!</strong> Or order 
-          takeaway and enjoy the best Japanese cuisine can offer! <br><a href="order-online">Order now
-            <img src="#" alt="arrow icon pointing to link">
-          </a></p>
+          takeaway and enjoy the best Japanese cuisine can offer!</p>
+          <a href="order-online">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="0.8em">
+            <polyline points="99.74 99.74 980.26 540 99.74 980.26"/>
+            </svg>
+            Order now
+          </a>
       </section>
     </article>
 
@@ -103,7 +119,7 @@
 
   <footer>
     <h2>Where can you find us?</h2>
-    <section>
+    <section aria-label="Button menu to control GoogleMaps frame to the different locations of SushiMania.">
       <button onclick="changeMap('edgware')">Edgware</button>
       <button onclick="changeMap('cambridge')">Cambridge</button>
       <button onclick="changeMap('reading')">Reading</button>
@@ -137,7 +153,7 @@
         <img src="./images/socials-03.png" alt="tik-tok icon, link to our tik tok account">
       </a>
     </section>
-    <p>&copy; 2025 Sitanala.</p>
+    <p>&copy; 2025 Kaj-Benjamin Sitanala.</p>
   </footer>
 
 <script defer src="./scripts/script.js"></script>

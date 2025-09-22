@@ -3,8 +3,8 @@ console.log("hi");
 
 // Hamburger menu
 
-const hamburgerIcon = document.querySelector("header nav div");
-  const navList = document.getElementById('menu');
+const hamburgerIcon = document.querySelector("header nav button");
+  const navList = document.querySelector("header nav ul");
 
   hamburgerIcon.addEventListener('click', () => {
     navList.classList.toggle('open');
