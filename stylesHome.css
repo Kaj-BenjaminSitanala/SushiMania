@@ -152,7 +152,7 @@ main article:last-of-type  {
 }
 
 main article:last-of-type section {
-  width: 100%;
+  width: 90%;
   height: auto;
   padding: 1.8rem;
   display: flex;
