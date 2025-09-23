@@ -1,0 +1,69 @@
+main {
+    display: flex;
+    background: url(./images/hero1.jpg);
+}
+
+main section {
+    width: 80%;
+    background-color: var(--off-white);
+    padding: 2em;
+    align-self: center;
+
+    color: var(--sushi-red);
+}
+
+form {
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(min(16em, 100%), 1fr));
+    gap: 2em;
+}
+
+@media screen and (min-width: 600px) {
+    main section {
+        max-width: 50%;
+    }
+}
+
+label input {
+    width: 100%;
+    border: solid var(--sushi-red);
+    padding: 1em;
+
+    color: black;
+    font-size: 1em;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    padding: 1em;
+    border: solid var(--sushi-red) 0.1em;
+
+}
+
+fieldset input {
+    margin-right: 1em;
+    width: min-content;
+}
+
+fieldset input:checked {
+    border: 8px solid var(--off-white);
+}
+
+label:last-of-type {
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+
+textarea {
+    width: 100%;
+    border: solid var(--sushi-red);
+    padding: 1em;
+
+    color: black;
+    font-size: 1em;
+}
+
+

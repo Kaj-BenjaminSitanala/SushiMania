@@ -11,7 +11,10 @@ main section:nth-of-type(1) ul {
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
+  scroll-snap-stop: always;
   transition: ease-in;
+  scrollbar-color: var(--sushi-red);
+  scrollbar-width: thin;
 
   anchor-name: --my-carousel;
   
@@ -34,6 +37,10 @@ main section:nth-of-type(1) li {
   flex: 0 0 100%;
   
   scroll-snap-align: center;
+}
+
+main section:nth-of-type(1) li p {
+  align-self: center;
 }
 
 main section:nth-of-type(1) li:nth-of-type(2) {

@@ -8,18 +8,16 @@
   <meta name="description" content="FED course within Communication and Multi Media Design at Hogeschool van Amsterdam">
   <meta name="keywords" content="HTML, CSS, JavaScript, Front-End, Course, Applied-Science, University, Sushi, Case-Study">
 
-  <title>Sushimania - Home</title>
+  <title>Sushimania - Contact us</title>
 
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="stylesHome.css">
+  <link rel="stylesheet" href="stylesContact.css">
   <link rel="icon" href="images/favicon.svg" sizes="any" type="image/svg+xml">
   
 </head>
-
 <body>
-  
-  <header>
-      <h1 class="visually-hidden">Welcome to SushiMania</h1>
+<header>
+      <h1 class="visually-hidden">Welcome to SushiMania's contact page</h1>
     <nav>
 
       <button aria-label="dropdown main navigation">
@@ -49,75 +47,47 @@
     </nav>
   </header>
 
-  <main>
-    <section >
-      <ul>
-        <li>
-          <h2>Bottomless Menu</h2>
-          <p>Check out our bottomless menu if you eat in at our locations!
-          </p>
-          <a href="./menu.html">Explore More <span class="visually-hidden">of our bottomless menu.</span></a>
-        </li>
-        <li>
-          <h2>20% Loyalty Discount</h2>
-          <p>Each time you order online at our website you earn points.
-          </p>
-      <a href="./menu.html">Learn more <span class="visually-hidden">our 20% loyalty discount</span></a>
-        </li>
-        <li>
-          <h2>1/2 Price All Day Every Day</h2>
-          <p>Get 50% off when you eat in at our locations.</p>
-          <a href="offers">Learn more <span class="visually-hidden">about our half priced items.</span></a>
-        </li>
-        <li>
-          <h2>Deliveroo</h2>
-          <p>20% off for orders over 20 pounds from 1st June 2025</p>
-          <a href="contact">Deliveroo Promo!</a>
-        </li>
-      </ul>
-    </section>
-
+<main>
     <section>
-      <h2>Welcome to SushiMania!</h2>
-      <img src=".//images/logo_half.png" alt="SushiMania logo">
-      <p>We offer traditional Japanese cuisine ranging from sashimi, sushi, traditional & modern makis.
-       As well as grilled seafoods & meats, tempuras, rice and noodles.
-      <strong>All at affordable prices!</strong></p>
+        <h2>Contact us</h2>
+        <form action="">
+            <label for="fname">First name:
+            <input type="text" value="John" name="fname">
+            </label>
+            <label for="lname">Last name:
+            <input type="text" value="Doe" name="lname">
+            </label>
+            <label for="tel">Enter phone number:
+                <input type="tel" name="tel" value="+44">
+            </label>
+            <label for="email">Enter your email:
+                <input type="email" value="example@domain.com" name="email">
+            </label>
 
-      <section>
-      <a href="order-online">
-        <img src="images/welcome-icon-01.png" alt="Icon of a sushi">
-         <strong>Order</strong>
-        </a>
-      <a href="./menu.html">
-        <img src="images/welcome-icon-02.png" alt="Icon of a platter of variable sushi">
-        <strong>Menu</strong>
-      </a>
-      <a href="locations">
-        <img src="images/welcome-icon-03.png" alt="Icon of a map">
-        <strong>Location</strong>
-      </a>
+            <fieldset>
+            <legend>Enter subject:</legend>
+            <label><input name="subject" value="general" type="radio">General inquiry</label>
+            <label><input name="subject" value="service" type="radio">Our sevice</label>
+            <label><input name="subject" value="food" type="radio">Our food</label>
+            <label><input name="subject" value="other" type="radio">Other</label>
+            </fieldset>
+
+            <fieldset>
+            <legend>Enter branch:</legend>
+            <label><input name="branch" value="edgware" type="radio">Edgware</label>
+            <label><input name="branch" value="cambridge" type="radio">Cambridge</label>
+            <label><input name="branch" value="reading" type="radio">Reading</label>
+            <label><input name="branch" value="brighton" type="radio">Brighton</label>
+            </fieldset>
+
+            <label for="message">Enter your message here: <br>
+                <textarea name="message">Type here...</textarea>
+            </label>
+
+        </form>
     </section>
-    </section>
-    
-    <article>
-      <section>
-        <h2>Why Choose Us?</h2>
-        <p>Our ingredients are guaranteed fresh and delivered daily to ensure every dish is 
-        served with the highest quality food to every table. <strong>Book a table now!</strong> Or order 
-          takeaway and enjoy the best Japanese cuisine can offer!</p>
-          <a href="order-online">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="0.8em">
-            <polyline points="99.74 99.74 980.26 540 99.74 980.26"/>
-            </svg>
-            Order now
-          </a>
-      </section>
-    </article>
-
-  </main>
-
-  <footer>
+</main>
+<footer>
     <h2>Where can you find us?</h2>
     <section aria-label="Button menu to control GoogleMaps frame to the different locations of SushiMania.">
       <button onclick="changeMap('edgware')">Edgware</button>
@@ -155,5 +125,6 @@
   </footer>
 
 <script defer src="./scripts/script.js"></script>
+<script defer src="./scripts/scriptMenu.js"></script>
 </body>
 </html>
