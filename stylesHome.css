@@ -59,8 +59,8 @@ main section:nth-of-type(1) ul::scroll-marker-group {
 
 main section:nth-of-type(1) li::scroll-marker {
   content: "";
-  width: 16px;
-  height: 16px;
+  width: 1em;
+  height: 1em;
   background-color: transparent;
   border: 0.2em solid var(--off-white);
   border-radius: 50%;

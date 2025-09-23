@@ -23,4 +23,3 @@ const hamburgerIcon = document.querySelector("header nav button");
   document.querySelector("footer section iframe").src = locations[location];
   };
 
-
