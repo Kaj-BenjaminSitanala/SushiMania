@@ -52,24 +52,24 @@
         <h2>Contact us</h2>
         <form action="">
             <label for="fname">First name:
-            <input type="text" value="John" name="fname">
+            <input type="text" placeholder="John" name="fname">
             </label>
             <label for="lname">Last name:
-            <input type="text" value="Doe" name="lname">
+            <input type="text" placeholder="Doe" name="lname">
             </label>
             <label for="tel">Enter phone number:
-                <input type="tel" name="tel" value="+44">
+                <input type="tel" name="tel" placeholder="+44">
             </label>
             <label for="email">Enter your email:
-                <input type="email" value="example@domain.com" name="email">
+                <input type="email" placeholder="example@domain.net" name="email">
             </label>
 
             <fieldset>
             <legend>Enter subject:</legend>
-            <label><input name="subject" value="general" type="radio">General inquiry</label>
-            <label><input name="subject" value="service" type="radio">Our sevice</label>
-            <label><input name="subject" value="food" type="radio">Our food</label>
-            <label><input name="subject" value="other" type="radio">Other</label>
+            <label><input name="subject" value="general" type="radio"><span>General inquiry</span></label>
+            <label><input name="subject" value="service" type="radio"><span>Our sevice</span></label>
+            <label><input name="subject" value="food" type="radio"><span>Our food</span></label>
+            <label><input name="subject" value="other" type="radio"><span>Other</span></label>
             </fieldset>
 
             <fieldset>
@@ -81,9 +81,9 @@
             </fieldset>
 
             <label for="message">Enter your message here: <br>
-                <textarea name="message">Type here...</textarea>
+                <textarea name="message"placeholder="Type here..."></textarea>
             </label>
-
+            <input type="submit">
         </form>
     </section>
 </main>

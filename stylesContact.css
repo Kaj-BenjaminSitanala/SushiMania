@@ -1,6 +1,6 @@
 main {
     display: flex;
-    background: url(./images/hero1.jpg);
+    background: linear-gradient(#0000008a, #0000008a), url(./images/hero1.jpg);
 }
 
 main section {
@@ -38,18 +38,26 @@ fieldset {
     display: flex;
     flex-direction: column;
     gap: 0.5em;
-    padding: 1em;
-    border: solid var(--sushi-red) 0.1em;
 
+    border: none;
 }
 
 fieldset input {
-    margin-right: 1em;
-    width: min-content;
+    display: none;
 }
 
-fieldset input:checked {
-    border: 8px solid var(--off-white);
+fieldset label {
+    background-color: var(--sushi-red);
+    color: var(--off-white);
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+}
+
+fieldset label:has(input[type="radio"]:checked) {
+    background-color: var(--off-white);
+    border: var(--sushi-red) solid ;
+    color: var(--sushi-red);
 }
 
 label:last-of-type {
@@ -59,11 +67,27 @@ label:last-of-type {
 
 textarea {
     width: 100%;
+    height: 30vh;
     border: solid var(--sushi-red);
     padding: 1em;
 
     color: black;
     font-size: 1em;
+    font-family: sushi;
+}
+
+input[type="submit"] {
+    background-color: var(--off-white);
+    border: solid var(--sushi-red);
+    padding: 1em;
+    width: 10em;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--sushi-red);
+    padding: 1em;
+    width: 10em;
+    color: var(--off-white);
 }
 
 
