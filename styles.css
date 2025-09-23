@@ -50,6 +50,7 @@
 /* Body styles */
 body {
   overflow-x: hidden;
+  max-width: 100%;
 
   background-color: var(--off-white);
 
