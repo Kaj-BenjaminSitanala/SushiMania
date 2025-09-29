@@ -54,6 +54,11 @@ fieldset label {
     padding: 1em;
 }
 
+fieldset label:hover {
+    background-color: var(--back-grey);
+    color: var(--off-white);
+}
+
 fieldset label:has(input[type="radio"]:checked) {
     background-color: var(--off-white);
     border: var(--sushi-red) solid ;
@@ -81,6 +86,7 @@ input[type="submit"] {
     border: solid var(--sushi-red);
     padding: 1em;
     width: 10em;
+    color: var(--sushi-red);
 }
 
 input[type="submit"]:hover {
