@@ -65,11 +65,18 @@ img, video, iframe, section, ul {
 }
 
 /* Main alignments */
+
 main {
   display: flex;
   flex-direction: column;
 }
+
 /* Header algemeen */
+
+a[aria-current="page"] {
+  display: none;
+}
+
 
 header {
   background-color: var(--back-grey); 
@@ -85,14 +92,6 @@ nav img {
 header h1 {
   text-align: center;
   margin-bottom: 0;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 2em;
-  align-items: center;
 }
 
 header nav a {
@@ -142,30 +141,34 @@ nav {
 }
 
 nav ul {
-      display: none;
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
-      background-color: var(--back-grey);
-      position: absolute;
-      top: 5rem;
-      right: 0;
-      width: 100%;
-      height: fit-content;
-      text-align: left;
-      transition: transform 0.3s ease-in-out;
-      transform: translateX(100%);
-      z-index: 9999;
-      padding: 2rem;
-}
+  display: none;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background-color: var(--back-grey);
+  position: absolute;
+  top: 5rem;
+  right: 0;
+  width: 100%;
+  height: fit-content;
+  text-align: left;
+  z-index: 10;
+  padding: 2rem;
 
-nav section {
-      gap: 1em;
+  list-style: none;
+  justify-content: center;
+  gap: 2em;
+  align-items: center;
 }
 
 nav ul.open {
-      display: block;
-      transform: translateX(0);
+  display: block;
+  transform: translateX(0);
+}
+
+nav section {
+  display: flex;
+  gap: 1em;
 }
 
 header img {
@@ -175,6 +178,51 @@ header img {
 li {
       margin-bottom: 1.5rem;
 } 
+
+@media screen and (min-width: 1280px) {
+  header {
+    display: flex;
+    height: 10vh;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    padding: 2em;
+  }
+
+  nav {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  
+  nav ul {
+    display: flex;
+    justify-content: flex-start;
+    transform: translateX(0);
+    padding: 0;
+
+    position: static;
+    margin: 0;
+  }
+
+  nav ul li {
+    margin: 0;
+  }
+
+  header nav button, header nav button span {
+    display: none;
+  }
+
+  nav img {
+    margin: 0;
+  }
+
+  nav section a {
+    width: max-content;
+  }
+
+}
 
 /* Main sections */
 main {
