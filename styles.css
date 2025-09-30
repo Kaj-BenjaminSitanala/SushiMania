@@ -198,7 +198,6 @@ li {
     gap: 2em;
   }
 
-  
   nav ul {
     display: flex;
     justify-content: flex-start;
@@ -221,6 +220,10 @@ li {
   nav img {
     margin: 0;
     width: 15%;
+  }
+
+  nav section {
+    margin-left: auto;
   }
 
 }
