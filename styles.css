@@ -85,16 +85,13 @@ header {
   background-color: var(--back-grey); 
   color: var(--off-white);
   padding: 1rem;
+  height: max-content;
+  margin: 0;
 }
 
 nav img {
   width: 18em;
   margin-right: 200px;
-}
-
-header h1 {
-  text-align: center;
-  margin-bottom: 0;
 }
 
 header nav a {
@@ -106,6 +103,9 @@ header nav a {
 
 header nav a:hover {
   color: var(--sushi-red);
+}
+nav section {
+  width: max-content;
 }
 
 nav section a {
@@ -188,13 +188,6 @@ li {
 
   header {
     display: flex;
-    height: 10vh;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    padding: 2em;
-
-
   }
 
   nav {
@@ -202,7 +195,7 @@ li {
     width: 100%;
     justify-content: flex-start;
 
-    gap: 3em;
+    gap: 2em;
   }
 
   
@@ -214,6 +207,7 @@ li {
 
     position: static;
     margin: 0;
+    width: max-content;
   }
 
   nav ul li {
@@ -227,10 +221,6 @@ li {
   nav img {
     margin: 0;
     width: 15%;
-  }
-
-  nav section a {
-    width: max-content;
   }
 
 }

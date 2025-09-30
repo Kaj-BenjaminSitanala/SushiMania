@@ -58,7 +58,7 @@ https://kaj-benjaminsitanala.github.io/SushiMania/
 
 ## Toegankelijkheidstest 1/2 (week 1)
 
-<details open>
+<details>
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
@@ -83,7 +83,7 @@ https://kaj-benjaminsitanala.github.io/SushiMania/
 
 ## Breakdownschets (week 1)
 
-<details open>
+<details>
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
@@ -105,7 +105,7 @@ https://kaj-benjaminsitanala.github.io/SushiMania/
 
 ## Voortgang 1 (week 2)
 
-<details open>
+<details>
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
@@ -161,21 +161,35 @@ https://kaj-benjaminsitanala.github.io/SushiMania/
 
 ## Voortgang 2 (week 3)
 
-<details>
+<details open>
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Ik ben veel bezig geweest met alles rechtzetten in mijn html en in mijn css, zoals mijn hoofdpagina die een section in een section met een artikel eronder met een section etc. had. Nu heb ik mijn hoofdpagin werkende gekregen, nogsteeds moet ik even kijken hoe het zit met headings voor mijn articles en sections, ik heb namelijk gelezen dat alle sections een heading moeten hebben. dus dan moet ik even kijken hoe ik mijn hierarchie, nadat ik de sections overhoop heb gehaalt, weer in orde kan zetten.
 
+Verder heb ik een derde pagina toegevoegd, aangezien Sanne zei dat ik nog een extra iets moest toevoegen na mijn Menu pagina. Dus ik heb de contactpagina aangemaakt.
+
+Ook alles is tot mijn weten responsive, behalve de menu pagina. Dus de hoodpagina is responsive en de contact pagina is responsive. Dus nu alleen nog de menu pagina, deze pagina heeft nog het filtermenu als challenge, die is op mobiele versie een dropdownmenu en als desktop versie wordt dit een sidemenu.
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | student 1      
+  - 
+  - 
+  - 
+  | student 2
+  - 
+  - 
+  - 
+  | student 3
+  - 
+  - 
+  - 
+  |student 4 
+  - 
+  - 
+  - 
 
 
   ### Verslag van meeting
@@ -184,12 +198,9 @@ https://kaj-benjaminsitanala.github.io/SushiMania/
   - punt 1
   - punt 2
   - nog een punt
-- ...
+  - ...
 
 </details>
-
-
-
 
 
 ## Toegankelijkheidstest 2/2 (week 4)
@@ -273,8 +284,10 @@ https://kaj-benjaminsitanala.github.io/SushiMania/
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. ChatGPT - gebruikt om specifieke problemen in mijn CSS aan te kaarten om te kijken waar dingen fout gingen.
+  bv: Een vraag aan ChatGPT = "I am making a website, i made a css carousel section, with a section and an ul inside. the ul is display: flex, flex direction row, and the overflow is put to scroll. my body has the property of overflow= hidden and the max width is 100%. why is it still possible to scroll the whole page horizontal into nothing? and With inspect I can see the flex overlay of the scrollable carousel outside of the boundaries." Bovendien kwam uit dit antwoord niks nuttigs en heb ik Sanne gevraagd voor hulp.
+  2. https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_overflow/CSS_carousels#responsive_carousel_final_result - gebruikt om informatie over mijn CSS carousel te vinden, zodat ik weet waar ik precies naar kijk in mijn carousel.
+  3. (https://chrome.dev/carousel-configurator/) - Voor het daadwerkelijk maken van mijn Carousel.
+  4. 
 
 </details>
