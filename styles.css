@@ -74,7 +74,9 @@ main {
 /* Header algemeen */
 
 a[aria-current="page"] {
-  display: none;
+  color: var(--sushi-red);
+  cursor: default;
+  border-bottom: solid var(--sushi-red) 0.3em;
 }
 
 
@@ -172,7 +174,8 @@ nav section {
 }
 
 header img {
-      margin-bottom: 1rem;
+  width: 30%;
+  margin: 0;
 }
 
 li {
@@ -180,6 +183,7 @@ li {
 } 
 
 @media screen and (min-width: 1280px) {
+
   header {
     display: flex;
     height: 10vh;
@@ -187,12 +191,16 @@ li {
     padding: 0;
     width: 100%;
     padding: 2em;
+
+
   }
 
   nav {
     display: flex;
     width: 100%;
     justify-content: flex-start;
+
+    gap: 3em;
   }
 
   
@@ -216,6 +224,7 @@ li {
 
   nav img {
     margin: 0;
+    width: 15%;
   }
 
   nav section a {
@@ -298,4 +307,10 @@ footer section:nth-of-type(2) {
   border-radius: 1em;
   background-color: var(--sushi-red);
   margin-top: 0;
+}
+
+iframe {
+  width: 100%;
+  height: 40vh;
+  border: none;
 }

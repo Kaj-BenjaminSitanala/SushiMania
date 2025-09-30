@@ -92,7 +92,7 @@ main section:nth-of-type(1) li a:hover {
 }
 
 /* Welcome article - 3 buttons*/
-main section:nth-of-type(2) {
+main article > section:first-of-type {
   padding-top: 1rem;
   padding-bottom: 1rem;
   display: flex;
@@ -105,27 +105,27 @@ main section:nth-of-type(2) {
   margin-right: 1rem;
 }
 
-main section:nth-of-type(2) h2 {
+main article > section:first-of-type h2 {
   order: 2;
 }
 
-main section:nth-of-type(2) p {
+main article > section:first-of-type p {
   order: 2;
 }
 
-main section:nth-of-type(2) img {
+main article > section:first-of-type img {
   width: 10em;
   order: 1;
 }
 
-main section:nth-of-type(2) section {
+main article > section:first-of-type section {
   display: flex;
   flex-direction: row;
   justify-content: center;
   order: 2;
 }
 
-main section:nth-of-type(2) section a {
+main article > section:first-of-type section a {
   margin-top: 1em;
   display: inline-flex;
   flex-direction: column;
@@ -140,25 +140,25 @@ main section:nth-of-type(2) section a {
   height: max-content;
 }
 
-main section:nth-of-type(2) section a:hover {
+main article > section:first-of-type section a:hover {
   background-color: var(--sushi-red);
   color: var(--off-white);
 }
 
-main section:nth-of-type(2) section a img {
+main article > section:first-of-type section a img {
   width: 5em;
   height: 5em;
   margin-bottom: 0.5rem; /* spacing between icon + text TUNE IT LATER */
 }
 
 /* Why section */
-main article:last-of-type  {
+main article > section:last-of-type  {
   padding: 1rem;
   background-image: url(./images/hero3.jpg);
   height: max-content;
 }
 
-main article:last-of-type section {
+main article > section:last-of-type section {
   width: 90%;
   height: auto;
   padding: 1.8rem;
@@ -171,15 +171,15 @@ main article:last-of-type section {
   margin: 1rem;
 }
 
-main article:last-of-type h2 {
+main article > section:last-of-type h2 {
   margin-bottom: 0.5rem;
 }
 
-main article:last-of-type p {
+main article > section:last-of-type p {
   margin-bottom: 2rem;
 }
 
-main article:last-of-type a  {
+main article > section:last-of-type a  {
   font-size: 1.1em;
   text-decoration: none;
   color: var(--sushi-red);
@@ -187,7 +187,7 @@ main article:last-of-type a  {
   margin-top: auto;
 }
 
-main article:last-of-type a svg polyline {
+main article > section:last-of-type a svg polyline {
 fill: none;
 stroke: var(--sushi-red);
 stroke-linecap: round;
@@ -195,3 +195,4 @@ stroke-linejoin: round;
 stroke-width: 13em;
 align-self: center;
 }
+
