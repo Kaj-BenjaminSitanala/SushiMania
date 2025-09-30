@@ -91,19 +91,37 @@ main section:nth-of-type(1) li a:hover {
     color: var(--back-grey);
 }
 
-/* Welcome article - 3 buttons*/
-main article > section:first-of-type {
+/* main article*/
+main article {
+  padding-left: 1em;
+  padding-right: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+main article > section {
   padding-top: 1rem;
   padding-bottom: 1rem;
   display: flex;
   flex-direction: column;
   justify-items: center;
   align-items: center;
-  height: auto;
+  height: 40vh;
   text-align: center;
-  margin-left: 1rem;
-  margin-right: 1rem;
 }
+
+@media screen and (min-width: 768px) {
+  main article {
+    display: flex;
+    flex-direction: row;
+  }
+
+  main article > section {
+    width: 50%;
+  }
+}
+
+/*main article first section welcome - 3 buttons */
 
 main article > section:first-of-type h2 {
   order: 2;
@@ -152,11 +170,6 @@ main article > section:first-of-type section a img {
 }
 
 /* Why section */
-main article > section:last-of-type  {
-  padding: 1rem;
-  background-image: url(./images/hero3.jpg);
-  height: max-content;
-}
 
 main article > section:last-of-type section {
   width: 90%;
@@ -195,4 +208,5 @@ stroke-linejoin: round;
 stroke-width: 13em;
 align-self: center;
 }
+
 
