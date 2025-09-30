@@ -60,6 +60,7 @@ body {
 }
 
 img, video, iframe, section, ul {
+  overflow-x: hidden;
   max-width: 100%;
   box-sizing: border-box;
 }
@@ -109,7 +110,8 @@ header nav a:hover {
 
 nav section a {
     background-color: var(--sushi-red);
-    padding: 1em;
+    padding: 0.5em;
+    line-height: normal;
     border-radius: 1em;
 }
 
@@ -235,6 +237,7 @@ li {
 
 /* Main sections */
 main {
+  overflow-x: hidden;
   max-width: 100%;
   margin: 0;
 }
