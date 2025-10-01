@@ -12,6 +12,12 @@ main section {
     color: var(--sushi-red);
 }
 
+@media (prefers-color-scheme: dark) {
+    main section {
+        background-color: var(--back-grey);
+    }
+}
+
 form {
     display: grid;
 
@@ -24,7 +30,13 @@ input:focus, textarea:focus {
     background-color: rgba(0, 0, 0, 0.050);
     border: solid var(--back-grey) 0.2em;
     outline: none;
+}
 
+@media (prefers-color-scheme: dark) {
+    input:focus, textarea:focus {
+        background-color: rgba(63, 63, 63, 0.05);
+        border: solid var(--off-white) 0.2em;
+    }
 }
 /*     -     */
 
@@ -103,6 +115,23 @@ input[type="submit"]:hover {
     padding: 1em;
     width: 10em;
     color: var(--off-white);
+}
+
+@media (prefers-color-scheme: dark) {
+        input[type="submit"] {
+        background-color: var(--sushi-red);
+        border: solid var(--off-white);
+        padding: 1em;
+        width: 10em;
+        color: var(--off-white);
+    }
+
+    input[type="submit"]:hover {
+        background-color: var(--off-white);
+        padding: 1em;
+        width: 10em;
+        color: var(--sushi-red);
+    }
 }
 
 

@@ -29,6 +29,12 @@
     --back-grey: #313131;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --sushi-red: #ff0000;
+  }
+}
+
 /* Van a11y */
 .visually-hidden {
   clip: rect(0 0 0 0);
@@ -51,6 +57,12 @@
   background-color: var(--sushi-red);
 }
 
+@media (prefers-color-scheme: dark) {
+  *::selection {
+    color: var(--sushi-red);
+    background-color: var(--off-white);
+  }
+}
 
 /* Body styles */
 
@@ -67,6 +79,13 @@ body {
   font-family: sushi;
   line-height: 1.6;
   color: var(--back-grey);
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--back-grey);
+    color: var(--off-white);
+  }
 }
 
 /* Main alignments */

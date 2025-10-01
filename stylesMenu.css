@@ -1,11 +1,15 @@
 
-
-
 main {
-    background-color: var(--back-grey);
-    color: var(--off-white);
+    background-color: var(--off-white);
+
     padding: 1em;
     width: 100%;
+}
+
+@media (prefers-color-scheme: dark) {
+    main {
+        background-color: var(--back-grey);
+    }
 }
 
 main section:nth-of-type(1) button {
@@ -15,11 +19,14 @@ main section:nth-of-type(1) button {
     width: 100%;
     color: white;
     font-size: medium;
-
 }
 
 main section:nth-of-type(1) button:hover {
     background-color: rgb(115, 0, 0);
+}
+
+main > section:nth-of-type(1) > h2 {
+    display: none;
 }
 
 section:nth-of-type(1) form.open {
@@ -66,20 +73,31 @@ section:has( [value="sashimi"]:checked  ) label:nth-of-type(4) {
     color: var(--off-white);
 } 
 
-section article {
-    padding-top: 2em;
-    color: var(--off-white);
+main > section > article {
+    color: var(--back-grey);
+    display: block;
+
+    padding: 2em;
+    }
+
+main > section > article h3, main > section > article p {
+    color: var(--back-grey);
 }
 
-section article h2{
+@media (prefers-color-scheme: dark) {
+    main > section > article {
+        color: var(--off-white);
+    }
+
+    main > section > article h3, main > section > article p {
     color: var(--off-white);
+    }
 }
 
 section:nth-of-type(1) section {
     display: none;
-
-    background-color: var(--back-grey);
     padding: 2em;
+    color: var(--back-grey);
 }
 
 /* Van Sanne */
@@ -90,16 +108,20 @@ section:has( [value="sashimi"]:checked  ) #sashimi {
   display: block;
 }
 
-section:nth-of-type(1) section h2{
-    color: var(--off-white);
-}
-
-
 section:nth-of-type(1) section ol {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(16em, 100%), 1fr));
-    column-gap: 1em;
-    color: var(--off-white);
+    padding: 1em;
+
+    border: groove var(--sushi-red);
+    background-color: rgba(187, 187, 187, 0.088);
+}
+
+
+@media (prefers-color-scheme: dark) {
+    section:nth-of-type(1) section ol {
+        color: var(--off-white);
+    }
 }
 
 section:nth-of-type(1) section ol li {
@@ -108,7 +130,7 @@ section:nth-of-type(1) section ol li {
     grid-template-rows: max-content max-content;
     column-gap: 2em;
 
-    border-right: solid var(--off-white) 0.2em;
+    border-right: solid var(--sushi-red);
     padding: 1em;
 }
 
@@ -135,7 +157,19 @@ section:nth-of-type(1) section ol li p:nth-of-type(2) {
 @media screen and (min-width: 768px) {
     main > section {
         display: grid;
-        grid-template-columns: 30% 1fr;
+        grid-template-columns: max-content 1fr;
+        grid-template-rows: min-content max-content;
+    }
+
+    main > section:nth-of-type(1) > h2 {
+        display: block;
+        grid-column-start: 1;
+        grid-row-start: 1;
+
+        color: var(--off-white);
+        margin: 0;
+        padding: 1em;
+        background-color: var(--sushi-red);
     }
 
     main > section button {
@@ -146,9 +180,23 @@ section:nth-of-type(1) section ol li p:nth-of-type(2) {
         display: flex;
         grid-column-start: 1;
         grid-row-end: -1;
+        grid-row-start: 2;
+    }
+
+    main > section > article {
+    color: var(--back-grey);
+    display: block;
+    grid-column-start: 2;
+    grid-row-start: 1;
+
+    padding: 0;
+
+    padding-left: 2em;
     }
 
     main > section section {
         grid-column-start: 2;
+        grid-row-start: 2;
+        grid-row-end: -1;
     }
 }
