@@ -174,23 +174,15 @@ Ook alles is tot mijn weten responsive, behalve de menu pagina. Dus de hoodpagin
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      
-  - 
-  - 
-  - 
-  | student 2
-  - 
-  - 
-  - 
-  | student 3
-  - 
-  - 
-  - 
-  |student 4 
-  - 
-  - 
-  - 
-
+  | Kaj-Benjamin     
+  - Kleinste responsive size 375px
+  | Robin 
+  - Ruimte tussen h1 en tekst is erg groot (gap van 0.5em op een serg grote font size was het probleem.)
+  - Img vooraan, doormiddel van order: -1;
+  | Lisa
+  - Ul carousel css, li wordt niet doorzichtig, maar met img wel. Wordt uitgezocht door begeleiders.
+  | Kaa
+  - Aantal objectieve vragen over css.
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
