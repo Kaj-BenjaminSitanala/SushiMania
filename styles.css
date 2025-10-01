@@ -53,12 +53,11 @@
 html, body {
   overflow-x: hidden;
   position: relative;
+    max-width: 100%;
+
 }
 
 body {
-  overflow-x: hidden;
-  max-width: 100%;
-
   background-color: var(--off-white);
 
   font-family: sushi;
@@ -99,6 +98,12 @@ header {
 nav img {
   width: 18em;
   margin-right: 200px;
+}
+
+@media screen and (max-width: 423px) {
+  nav img {
+    display: none;
+  }
 }
 
 header nav a {
