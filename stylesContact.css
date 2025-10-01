@@ -21,7 +21,7 @@ main section {
 form {
     display: grid;
 
-    grid-template-columns: repeat(auto-fit, minmax(min(16em, 100%), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(45ch, 100%), 1fr));
     gap: 2em;
 }
 
@@ -40,9 +40,9 @@ input:focus, textarea:focus {
 }
 /*     -     */
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
     main section {
-        max-width: 50%;
+        max-width: 70%;
     }
 }
 

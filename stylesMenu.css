@@ -45,8 +45,8 @@ section:nth-of-type(1) form input {
     appearance: none;
 
     border-radius: 50%;
-    width: 16px;
-    height: 16px;
+    width: 1em;
+    height: 1em;
 
     border: 2px solid var(--off-white);
     transition: 0.2s all linear;
