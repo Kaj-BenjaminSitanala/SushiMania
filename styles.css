@@ -48,6 +48,13 @@
 
 
 /* Body styles */
+
+/* Sanne's fix viewport */
+html, body {
+  overflow-x: hidden;
+  position: relative;
+}
+
 body {
   overflow-x: hidden;
   max-width: 100%;
