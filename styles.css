@@ -33,17 +33,22 @@
 .visually-hidden {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
-  height: 1px;
+  height: 0.01em;
   overflow: hidden;
   position: absolute;
   white-space: nowrap;
-  width: 1px;
+  width: 0.01em;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+*::selection {
+  color: var(--off-white);
+  background-color: var(--sushi-red);
 }
 
 
@@ -53,8 +58,7 @@
 html, body {
   overflow-x: hidden;
   position: relative;
-    max-width: 100%;
-
+  max-width: 100%;
 }
 
 body {
@@ -63,12 +67,6 @@ body {
   font-family: sushi;
   line-height: 1.6;
   color: var(--back-grey);
-}
-
-img, video, iframe, section, ul {
-  overflow-x: hidden;
-  max-width: 100%;
-  box-sizing: border-box;
 }
 
 /* Main alignments */
@@ -95,12 +93,15 @@ header {
   margin: 0;
 }
 
-nav img {
-  width: 18em;
-  margin-right: 200px;
+nav > img, nav > section {
+  z-index: 9999;
 }
 
-@media screen and (max-width: 423px) {
+nav img {
+  width: 18em;
+}
+
+@media screen and (max-width: 37.5rem) {
   nav img {
     display: none;
   }
@@ -136,16 +137,16 @@ nav section a:hover {
 header nav button {
       display: block;
       cursor: pointer;
-      padding: 10px;
+      padding: 0.6em;
       background: none;
       border-style: none;
 }
 
 header nav button span {
       display: block;
-      width: 30px;
-      height: 4px;
-      margin: 5px 0;
+      width: 2em;
+      height: 0.25em;
+      margin: 0.33em 0;
       background-color: white;
       transition: all 0.3s ease;
 }
@@ -163,7 +164,7 @@ nav ul {
   margin: 0;
   background-color: var(--back-grey);
   position: absolute;
-  top: 5rem;
+  top: 4.7rem;
   right: 0;
   width: 100%;
   height: fit-content;
@@ -175,6 +176,7 @@ nav ul {
   justify-content: center;
   gap: 2em;
   align-items: center;
+  border-bottom: groove var(--sushi-red) 0.3em;
 }
 
 nav ul.open {
@@ -187,17 +189,11 @@ nav section {
   gap: 1em;
 }
 
-header img {
-  width: 30%;
-  margin: 0;
-}
-
 li {
       margin-bottom: 1.5rem;
 } 
 
-@media screen and (min-width: 1280px) {
-
+@media screen and (min-width: 80rem) {
   header {
     display: flex;
   }
@@ -219,32 +215,19 @@ li {
     position: static;
     margin: 0;
     width: max-content;
-  }
+    border-bottom: none;
 
-  nav ul li {
-    margin: 0;
+    position: relative;
+    inset: 1em;
   }
 
   header nav button, header nav button span {
     display: none;
   }
 
-  nav img {
-    margin: 0;
-    width: 15%;
-  }
-
   nav section {
     margin-left: auto;
   }
-
-}
-
-/* Main sections */
-main {
-  overflow-x: hidden;
-  max-width: 100%;
-  margin: 0;
 }
 
 h2 {
@@ -257,7 +240,6 @@ h2 {
 footer {
   background-color: var(--back-grey);
   color: var(--off-white);
-  max-width: 100%;
 }
 
 footer section {
@@ -277,6 +259,7 @@ footer h2 {
   padding-top: 2rem;
 }
 
+/* Bron: Developers.google.com */
 footer button {
   background-color: var(--back-grey);
   color: var(--off-white);

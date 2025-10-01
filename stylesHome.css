@@ -1,10 +1,5 @@
 /* Hero slidemenu carousel*/
 
-main > section:first-of-type {
-  overflow: hidden;
-  max-width: 100%;
-}
-
 main > section:nth-of-type(1) li h2 {
   color: var(--off-white);
 }

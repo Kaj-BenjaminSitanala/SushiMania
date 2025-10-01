@@ -19,6 +19,15 @@ form {
     gap: 2em;
 }
 
+/* Bron: MDN */
+input:focus, textarea:focus {
+    background-color: rgba(0, 0, 0, 0.050);
+    border: solid var(--back-grey) 0.2em;
+    outline: none;
+
+}
+/*     -     */
+
 @media screen and (min-width: 600px) {
     main section {
         max-width: 50%;
