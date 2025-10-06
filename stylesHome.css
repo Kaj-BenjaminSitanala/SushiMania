@@ -126,9 +126,25 @@ main article > section:first-of-type p {
   order: 2;
 }
 
-main article > section:first-of-type img {
+main article > section:first-of-type svg{
   width: 10em;
   order: 1;
+
+  fill: var(--back-grey);
+}
+
+main article > section:first-of-type svg circle {
+  fill: var(--sushi-red);
+}
+
+  @media (prefers-color-scheme: dark) {
+    main article > section:first-of-type svg{
+      fill: var(--off-white);
+    }
+
+    main article > section:first-of-type svg circle {
+      fill: var(--sushi-red);
+    }
 }
 
 main article > section:first-of-type section {

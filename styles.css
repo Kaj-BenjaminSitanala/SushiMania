@@ -28,11 +28,11 @@
     --sushi-red: #cd0000;
     --back-grey: #313131;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --sushi-red: #ff0000;
-  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --sushi-red: #ff0000;
+      --back-grey: #000000;
+    }
 }
 
 /* Van a11y */
@@ -305,11 +305,7 @@ footer section:last-of-type {
   display: flex;
   flex-direction: row;
   justify-content: center;
-}
-
-footer section:last-of-type img {
-  width: 3em;
-  margin: 1em;
+  gap: 1em;
 }
 
 footer section:nth-of-type(2) {
@@ -323,4 +319,9 @@ iframe {
   width: 100%;
   height: 40vh;
   border: none;
+}
+
+footer svg {
+  fill: var(--off-white);
+  width: 3em;
 }
