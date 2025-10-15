@@ -231,8 +231,9 @@ Ook alles is tot mijn weten responsive, behalve de menu pagina. Dus de hoodpagin
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
+  - Hele mooie grid uitwerking met grid-template-area: hier dit, dan dat ...
+  - select element met mooie uitleg en opties hiervoor
+  - kleuren voor elke functionaliteit maken in mn :root
   - nog een punt
   - ...
 
