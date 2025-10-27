@@ -62,7 +62,7 @@ main > section:nth-of-type(1) li:nth-of-type(3) {
 main > section:nth-of-type(1) ul::scroll-marker-group {
   position: absolute;
   position-anchor: --my-carousel;
-  top: calc(anchor(bottom) - 70px);
+  top: calc(anchor(bottom) - 4.375rem);   /* Van Sanne */
   justify-self: anchor-center;
 
   display: flex;
@@ -200,7 +200,7 @@ stroke-width: 13em;
 align-self: center;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 48rem) {
   main article {
     display: flex;
     flex-direction: row;

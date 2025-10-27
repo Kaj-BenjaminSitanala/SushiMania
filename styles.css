@@ -331,3 +331,12 @@ footer svg {
   fill: var(--off-white);
   width: 3em;
 }
+
+footer svg:hover, footer svg:focus {
+  fill: var(--sushi-red);
+}
+
+footer p:last-of-type {
+  padding: 1em;
+  font-weight: bold;
+}
