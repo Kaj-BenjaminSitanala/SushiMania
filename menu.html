@@ -50,11 +50,21 @@
 
   <main>
   <section>
-    <button>Choose your menu here:</button>
-    <h2>Choose your menu here:</h2>
-    <form hidden lang="ja">
+    <select name="chooseMenu" id="chooseMenu">
+      <option value="">Choose your menu</option>
+      <option lang="ja" value="uramaki">Uramaki</option>
+      <option lang="ja" value="futomaki">Futomaki</option>
+      <option lang="ja" value="nigiri">Nigiri</option>
+      <option lang="ja" value="sashimi">Sashimi</option>
+    </select>
+
+    <!-- Oude code
+     <button>Choose your menu here:</button>
+    <h2>Choose your menu here:</h2> -->
+    <form hidden lang="ja"> 
+      <h2>Choose your menu:</h2>
         <label>
-          <input type="radio" name="menuPage" value="uramaki" checked>
+          <input type="radio" name="menuPage" value="uramaki">
           Uramaki
         </label>
         <label>

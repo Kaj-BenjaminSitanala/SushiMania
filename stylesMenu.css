@@ -12,64 +12,66 @@ main {
     }
 }
 
-main section:nth-of-type(1) button {
-    background-color: var(--sushi-red);
-    border: none;
-    padding: 1.5em;
+/* Nieuwe code <select> van Sanne gekregen https://una.im/select-updates/*/
+
+ select, ::picker(select) {
+  appearance: base-select;
+}
+
+main select {
     width: 100%;
-    color: white;
-    font-size: medium;
-}
-
-main section:nth-of-type(1) button:hover {
-    background-color: rgb(115, 0, 0);
-}
-
-main > section:nth-of-type(1) > h2 {
-    display: none;
-}
-
-section:nth-of-type(1) form.open {
-    display: flex;
-}
-
-section:nth-of-type(1) form {
-    flex-direction: column;
-    gap: 1em;
-    background-color: var(--sushi-red);
-    color: white;
     padding: 1em;
-}
-
-section:nth-of-type(1) form input {
-    appearance: none;
-
-    border-radius: 50%;
-    width: 1em;
-    height: 1em;
-
-    border: 0.125rem solid var(--off-white);
-    transition: 0.2s all linear;
-
-    position: relative;
-}
-
-section:nth-of-type(1) form input:checked {
+    padding-left: 2em;
     background-color: var(--off-white);
+    color: var(--sushi-red);
+    border: solid var(--sushi-red) .2em;
+    border-radius: 3em 3em 0 0;
+
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
-label {
-    padding: 1em;
-    border-radius: 1em;
-}
+::picker(select) {
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.78);
+    padding:1em;
+    border: none;
+    border-radius: 0 0 3em 3em;
 
-section:has( [value="uramaki"]:checked  ) label:nth-of-type(1),
-section:has( [value="futomaki"]:checked  ) label:nth-of-type(2),
-section:has( [value="nigiri"]:checked  ) label:nth-of-type(3),
-section:has( [value="sashimi"]:checked  ) label:nth-of-type(4) {
-    background-color: var(--back-grey);
     color: var(--off-white);
 } 
+
+select::picker-icon {
+    /* list-style: none;
+    marker:none;
+    appearance: none; */
+    transition:.3s;
+    content: url("images/pickerIcon.png");
+    margin-right: 1em;
+}
+
+select:open::picker-icon {
+    rotate:x 180deg;
+}
+
+select option {
+    padding: 1em;
+    border-radius: 200em;
+}
+
+select option::checkmark {
+    transition:.3s;
+
+    content: url("./images/checkMark.png");
+    object-fit: contain;
+
+
+    margin-right: 1em;
+}
+
+option:hover {
+    background-color: var(--sushi-red);
+}
 
 main > section > article {
     color: var(--back-grey);
@@ -159,27 +161,57 @@ section:nth-of-type(1) section ol li p:nth-of-type(2) {
         grid-template-rows: min-content max-content;
     }
 
-    main > section:nth-of-type(1) > h2 {
-        display: block;
-        grid-column-start: 1;
-        grid-row-start: 1;
-
-        color: var(--off-white);
-        margin: 0;
-        padding: 1em;
-        background-color: var(--sushi-red);
-    }
-
-    main > section button {
+    select {
         display: none;
     }
 
-    main > section form {
+    form {
         display: flex;
+        flex-direction: column;
         grid-column-start: 1;
         grid-row-end: -1;
-        grid-row-start: 2;
+        grid-row-start: 1;
     }
+
+        form {
+    gap: 1em;
+    color: var(--sushi-red);
+}
+
+form h2 {
+    padding: 1rem;
+    padding-bottom: 0;
+    font-size: 1.2rem;
+    border-bottom: var(--sushi-red) solid .2rem;
+    width: 100%;
+    border-radius: 0;
+    color: var(--sushi-red);
+    background-color: none;
+}
+
+form label {
+    font-weight: bold;
+    border: solid var(--sushi-red) .2em;
+}
+
+ form input {
+    display: none;
+}
+
+label:has(>input:checked) {
+    background-color: var(--sushi-red);
+    color: var(--off-white);
+}
+
+label {
+    padding: 1rem;
+    border-radius: 20em;
+    text-align: center;
+} 
+ 
+    /* main > section button {
+        display: none;
+    }*/
 
     main > section > article {
     color: var(--back-grey);
