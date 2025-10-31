@@ -10,7 +10,7 @@ const hamburgerIcon = document.querySelector("header nav button");
     navList.classList.toggle('open');
   });
 
-// Footer map
+// Footer map... bron: Google
 
  const locations = {
     edgware: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4954.9372159432305!2d-0.2780573228585965!3d51.61462457183789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487616a389e26dc5%3A0xb0d8f62c95586a70!2sSushimania%20Edgware!5e0!3m2!1sen!2snl!4v1757610150458!5m2!1sen!2snl",
@@ -19,7 +19,22 @@ const hamburgerIcon = document.querySelector("header nav button");
     brighton: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2520.524433729198!2d-0.14596432289694397!3d50.82144927166551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487588b84d45d615%3A0x58406a80f959fe39!2sSushimania%20Brighton!5e0!3m2!1sen!2snl!4v1757610523642!5m2!1sen!2snl"
   };
 
-  window.changeMap = function(location) {
+  window.changeMap = function(location) { // 
   document.querySelector("footer section iframe").src = locations[location];
   };
+
+  // inline onclick in mijn html, dus die moet ik nog veranderen... Google had van alles en nogwat als script in HTML
+
+document.querySelector("footer section button:nth-of-type(1)")
+    .addEventListener("click", () => changeMap('edgware'));
+
+  document.querySelector("footer section button:nth-of-type(2)")
+    .addEventListener("click", () => changeMap('cambridge'));
+
+  document.querySelector("footer section button:nth-of-type(3)")
+    .addEventListener("click", () => changeMap('reading'));
+
+  document.querySelector("footer section button:nth-of-type(4)")
+    .addEventListener("click", () => changeMap('brighton'));
+    //Wat mij hierbij niet zo snel lukt is om aria-current toe te voegen en styling te geven aan de active button.... oh nvm hoeft niet persé, het werkt al met focus soortvan
 

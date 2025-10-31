@@ -17,6 +17,7 @@
 </head>
 
 <body>
+  <a href="#main-content">Skip to content</a>
   
   <header>
       <h1 class="visually-hidden">Welcome to SushiMania</h1>
@@ -44,7 +45,7 @@
     </nav>
   </header>
 
-  <main>
+  <main id="main-content">
     <section >
       <h2 class="visually-hidden">Hero carousel</h2>
       <ul>
@@ -74,6 +75,7 @@
     </section>
 
     <article>
+    <h2 class="visually-hidden">Empty heading</h2>
       <section>
         <h2>Welcome to SushiMania!</h2>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500">
@@ -109,6 +111,7 @@
         <strong>All at affordable prices!</strong></p>
 
         <section>
+          <h2 class="visually-hidden">Navigation to:</h2>
         <a href="#">
           <img src="images/welcome-icon-01.png" alt="Icon of a sushi">
           <strong>Order</strong>
@@ -130,7 +133,7 @@
         <p>Our ingredients are guaranteed fresh and delivered daily to ensure every dish is 
         served with the highest quality food to every table. <strong>Book a table now!</strong> Or order 
           takeaway and enjoy the best Japanese cuisine can offer!</p>
-          <a href="order-online">
+          <a href="#">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="0.8em">
             <polyline points="99.74 99.74 980.26 540 99.74 980.26"/>
             </svg>
@@ -146,35 +149,35 @@
     <h2>Where can you find us?</h2>
     <section aria-label="Button menu to control GoogleMaps frame to the different locations of SushiMania.">
       <h2 class="visually-hidden"> Button menu to navigate the google maps</h2>
-      <button onclick="changeMap('edgware')">Edgware</button>
-      <button onclick="changeMap('cambridge')">Cambridge</button>
-      <button onclick="changeMap('reading')">Reading</button>
-      <button onclick="changeMap('brighton')">Brighton</button>
+      <button aria-label="Change google maps to Sushimania location in Edgware">Edgware</button>
+      <button aria-label="Change google maps to Sushimania location in Cambridge">Cambridge</button>
+      <button aria-label="Change google maps to Sushimania location in Reading">Reading</button>
+      <button aria-label="Change google maps to Sushimania location in Brighton">Brighton</button>
     </section>
 
     <section>
       <h2 class="visually-hidden"> Google maps frame</h2>
       <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4954.9372159432305!2d-0.2780573228585965!3d51.61462457183789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487616a389e26dc5%3A0xb0d8f62c95586a70!2sSushimania%20Edgware!5e0!3m2!1sen!2snl!4v1757610150458!5m2!1sen!2snl"
-      referrerpolicy="no-referrer-when-downgrade">
+      referrerpolicy="no-referrer-when-downgrade" aria-label="Google maps showing the locations of SushiMani">
       </iframe>
     </section>
 
     <section>
-      <h2 class="visually-hidden"></h2>
-      <a href="http://www.instagram.com">
+      <h2 class="visually-hidden">Social media links</h2>
+      <a href="#">
           <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080">
           <path  d="M956.42,123.58c-45.52-45.52-106.04-70.59-170.42-70.59h-492c-64.38,0-124.9,25.07-170.42,70.59s-70.59,106.04-70.59,170.42v492c0,64.38,25.07,124.9,70.59,170.42,45.52,45.52,106.04,70.59,170.42,70.59h492c64.38,0,124.9-25.07,170.42-70.59,45.52-45.52,70.59-106.04,70.59-170.42v-492c0-64.38-25.07-124.9-70.59-170.42ZM929.01,786c0,78.85-64.16,143.01-143.01,143.01h-492c-78.85,0-143.01-64.16-143.01-143.01v-492c0-78.85,64.16-143.01,143.01-143.01h492c78.85,0,143.01,64.16,143.01,143.01v492Z"/>
           <path  d="M722.3,357.7c-46.65-46.66-111.1-75.51-182.3-75.51-142.39,0-257.81,115.42-257.81,257.81,0,71.2,28.85,135.65,75.51,182.3,46.65,46.66,111.1,75.51,182.3,75.51s135.65-28.85,182.3-75.51c46.66-46.65,75.51-111.1,75.51-182.3s-28.85-135.65-75.51-182.3ZM653,653c-30.18,30.19-70.31,46.81-113,46.81s-82.82-16.62-113-46.81c-30.19-30.18-46.81-70.31-46.81-113s16.62-82.82,46.81-113c30.18-30.19,70.31-46.81,113-46.81s82.82,16.62,113,46.81c30.19,30.18,46.81,70.31,46.81,113s-16.62,82.82-46.81,113Z"/>
           <path  d="M844.96,282.19c0,13.02-5.28,24.81-13.81,33.34s-20.32,13.81-33.34,13.81c-26.04,0-47.15-21.11-47.15-47.15,0-13.02,5.28-24.81,13.81-33.34,8.53-8.53,20.32-13.81,33.34-13.81s24.81,5.28,33.34,13.81c8.53,8.53,13.81,20.32,13.81,33.34Z"/>
           </svg>
       </a>
-      <a href="http://www.facebook.com">
+      <a href="#">
         <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080">
           <path d="M570.51,1033.11v-372.75h-134.14v-158.85h134.14v-140.51c0-88.12,71.43-159.55,159.55-159.55h144.04v158.85h-121.62c-14.72,0-26.65,11.93-26.65,26.65v118.09h148.26l-21.18,151.79h-127.08v376.28h133.54c96.56,0,174.83-78.28,174.83-174.83V220.62c0-96.56-78.28-174.83-174.83-174.83H220.62c-96.56,0-174.83,78.28-174.83,174.83v638.76c0,96.56,78.28,174.83,174.83,174.83h349.9v-1.1Z"/>
         </svg>
       </a>
-      <a href="http://www.x.com">
+      <a href="#">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080">
   <polygon points="580.92 546.13 810.67 842.69 724.79 842.69 535.78 598.72 506.4 560.79 269.33 254.79 355.21 254.79 551.54 508.21 580.92 546.13"/>
   <g>
@@ -183,8 +186,8 @@
   </g>
 </svg>
       </a>
-      <a href="http://www.tiktok.com">
-        <?xml version="1.0" encoding="UTF-8"?>
+      <a href="#">
+      
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080">
         <path d="M865.17,45.78H214.83c-93.36,0-169.05,75.69-169.05,169.05v650.34c0,93.36,75.69,169.05,169.05,169.05h650.34c93.36,0,169.05-75.69,169.05-169.05V214.83c0-93.36-75.69-169.05-169.05-169.05ZM706.88,393.86v278.85c0,35.01-6.51,69.13-19.35,101.42-13.07,32.88-32.09,62.29-56.52,87.43-41.36,42.56-94.91,69.3-150.79,75.31-8.08.86-16.23,1.3-24.41,1.3-29.93,0-60.25-5.77-88.93-17.03-33.61-13.18-65.3-34.01-91.64-60.22-26.47-26.35-47.56-58.15-60.98-91.96-14.56-36.68-20.2-76.1-16.31-113.98,3.32-32.42,13.3-63.65,29.65-92.81,15.6-27.82,36.29-52.49,61.48-73.34,51.92-42.94,118-65.22,186.06-62.75l-5.23,143.9c-32.75-1.19-64.37,9.4-89.04,29.81-22.57,18.67-37.04,44.15-39.68,69.88-3.13,30.52,10.19,63.86,35.63,89.18,25.16,25.03,58.05,38.06,88.01,34.84,22.56-2.42,44.91-13.96,62.91-32.49,22.67-23.32,35.14-54.74,35.14-88.49V123.05l144-.45c.02,2.8.47,28.25,10.62,59.38,12.37,37.89,33.5,67.43,62.82,87.78,41.82,29.03,87.09,30.56,110.34,28.89l10.32,143.63c-40.63,2.91-118.6.22-194.1-48.42Z"/>
       </svg>

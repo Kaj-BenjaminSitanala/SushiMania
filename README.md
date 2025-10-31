@@ -8,9 +8,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 https://kaj-benjaminsitanala.github.io/SushiMania/
 
-
-
-
 ## Jij
 
 <details open>
@@ -20,14 +17,10 @@ https://kaj-benjaminsitanala.github.io/SushiMania/
   Kaj-Benjamin Sitanala
 
   #### Je startniveau:
-  Rood
+  Rood?
   #### Je focus:
   Responsiveness 
 </details>
-
-
-
-
 
 ## Je website
 
@@ -54,8 +47,6 @@ https://kaj-benjaminsitanala.github.io/SushiMania/
  
 </details>
 
-
-
 ## Toegankelijkheidstest 1/2 (week 1)
 
 <details>
@@ -79,8 +70,6 @@ https://kaj-benjaminsitanala.github.io/SushiMania/
 <img src="./readme-images/wcag_5.JPG" width="375px" alt="Scan van WCAG Checklist's vijfde blz.">
 </details>
 
-
-
 ## Breakdownschets (week 1)
 
 <details>
@@ -90,7 +79,6 @@ https://kaj-benjaminsitanala.github.io/SushiMania/
   <img src="./readme-images/Fullpage-01.jpg" width="375px" alt="breakdown van de hele pagina">
   <img src="./readme-images/Fullpage-02.jpg" width="375px" alt="breakdown van de tweede hele pagina">
 
-
   ### dynamisch deel (bijv menu): 
   <img src="./readme-images/DynamicElements.png" width="375px" alt="Een header met een dropdown hamburger navigatie en een slide menu met een achtergrond die automatisch wisselt en de optie om met knoppen te besturen.">
  
@@ -98,10 +86,6 @@ https://kaj-benjaminsitanala.github.io/SushiMania/
   ### wellicht nog een dynamisch deel (bijv filter): 
   <img src="./readme-images/DynamicElementMap.png" width="375px" alt="Een google maps met een besturing (knoppen) om de plaatsen te veranderen.">
 </details>
-
-
-
-
 
 ## Voortgang 1 (week 2)
 
@@ -113,6 +97,12 @@ https://kaj-benjaminsitanala.github.io/SushiMania/
 
   Het ging over het algemeen heel soepel met de homepage, ik heb de dingen die ik vorige keer (twee jaar terug alweer) mis deed flink vermeden: De dingen die ik vermeed zijn onder andere 'Display: Grid', positioneren vooral door margins te gebruiken, widths buiten het scherm door 'vw' te gebruiken (dit gaat nogsteeds soms, dus goed op letten).
   <img src="./readme-images/Screenshot - Width bug.PNG" width="375px" alt="Een screenshot van de width buiten het scherm, ookal heb ik horzintaal scrollen (x-overlfow) op hidden gezet.">
+
+ <video width="320" height="240" controls>
+  <source src="./readme-images/ScreenRecording - Width bug.MP4" type="video/mp4">
+
+Your browser does not support the video tag.
+</video>
 
   Verder heb ik heel erg geprobeerd om mijn website snel af te maken, niet gehaast, maar er gewoon echt veel aan te zitten. Ik heb de eerste keer (de vorige keer) veel problemen gehad met tijdsnood en daardoor heb ik toen niks in deze readme gezet, allemaal opstapelende problemen. 
 
@@ -155,10 +145,6 @@ https://kaj-benjaminsitanala.github.io/SushiMania/
 
 </details>
 
-
-
-
-
 ## Voortgang 2 (week 3)
 
 <details open>
@@ -171,7 +157,7 @@ Verder heb ik een derde pagina toegevoegd, aangezien Sanne zei dat ik nog een ex
 
 Ook alles is tot mijn weten responsive, behalve de menu pagina. Dus de hoodpagina is responsive en de contact pagina is responsive. Dus nu alleen nog de menu pagina, deze pagina heeft nog het filtermenu als challenge, die is op mobiele versie een dropdownmenu en als desktop versie wordt dit een sidemenu.
 
-  ### Agenda voor meeting
+  ### Agenda voor meeting + verslag
   samen met je groepje opstellen
 
   | Kaj-Benjamin     
@@ -184,13 +170,7 @@ Ook alles is tot mijn weten responsive, behalve de menu pagina. Dus de hoodpagin
   | Kaa
   - Aantal objectieve vragen over css.
 
-  ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
 
 </details>
 
@@ -201,13 +181,19 @@ Ook alles is tot mijn weten responsive, behalve de menu pagina. Dus de hoodpagin
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  W3c validator laat bijna geen erros zien, alleen een paar articles en sections zonder heading offff een heading waar ik niks in heb gezet...
+
+  Verder gaat alles vlekkeloos.
+
+  Bevindingen test:
+  <img src="./readme-images/Readme-eind/wcag-2-1.jpeg" width="375px">
+  <img src="./readme-images/Readme-eind/wcag-2-2.jpeg" width="375px">
+  <img src="./readme-images/Readme-eind/wcag-2-3.jpeg" width="375px">
+  <img src="./readme-images/Readme-eind/wcag-2-4.jpeg" width="375px">
+  <img src="./readme-images/Readme-eind/wcag-2-5.jpeg" width="375px">
+
 
 </details>
-
-
-
-
 
 ## Voortgang 3 (week 4)
 
@@ -215,17 +201,7 @@ Ook alles is tot mijn weten responsive, behalve de menu pagina. Dus de hoodpagin
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  Ik ben er bijna zeker van dat mijn website klaar en functioneel is... behalve dat er waarschijnlijk een paar schoonheids foutjes in zitten... dus eigenlijk wil ik vragen gaan stellen over schoonheidsfoutjes.
 
 
   ### Verslag van meeting
@@ -239,9 +215,15 @@ Ook alles is tot mijn weten responsive, behalve de menu pagina. Dus de hoodpagin
 
 </details>
 
+### Notities voor eindgesprek
 
+<details>
+<summary> Dingen die ik nog wilde noteren voor mijn eindgesprek </summary>
+W3C validator checks: De checks die ik net heb uitgevoerd zeggen dat alles nu prima eruitziet behalve pseudo elements als :checkmark worden als error aangegeven...
+<img src="./readme-images/w3c-1.png" width="375px" alt="een screenshot van mijn w3c validator errors">
+<img src="./readme-images/w3c-2.png" width="375px" alt="een screenshot van mijn w3c validator errors">
 
-
+</details>
 
 ## Eindgesprek (week 5)
 
@@ -249,23 +231,29 @@ Ook alles is tot mijn weten responsive, behalve de menu pagina. Dus de hoodpagin
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="./readme-images/Readme-eind/1.png" width="375px" alt="uitomst opdracht 1">
+  <img src="./readme-images/Readme-eind/2.png" width="375px" alt="uitomst opdracht 1">
+  <img src="./readme-images/Readme-eind/3.png" width="375px" alt="uitomst opdracht 1">
+  <img src="./readme-images/Readme-eind/4.png" width="375px" alt="uitomst opdracht 1">
+  <img src="./readme-images/Readme-eind/5.png" width="375px" alt="uitomst opdracht 1">
+  <img src="./readme-images/Readme-eind/6.png" width="375px" alt="uitomst opdracht 1">
+  <img src="./readme-images/Readme-eind/7.png" width="375px" alt="uitomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Ik denk wat er het best ging nu vergeleken met de laatste keer is dat ik veel minder op mijn eigen focus van visueel lette... De eerste keer dat ik dit vak deed lag mijn focus bij visueel de website gelijk maken, waarbij bij mij semantiek en syntax niet uitmaakte zolang de pagina er maar hetzelfde uitzag. Ook was mijn focus deze keer veeeeel beter en had ik er echt lol, dit is uit eindelijk doorgegaan naar dat ik buiten het vak om begonnen ben aan mijn eigen portfolio waarvoor ik nu de tweede versie aan het maken ben en daarnaast ook een website voor de studenten bar die ik run. Dus kortom wat beter ging is 'alles' in elke zin (motivatie, interesse daar ook bij getelt).
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
-
+  Wat meer objectief beter ging is het stapsgewijs aan de slag gaan, dus vanuit de originele webpage te kijken welke elementen nodig zijn <img src="./readme-images/Fullpage-01.jpg" width="375px"  alt="top"> en vanuit dat verder te werken en voor elk element aandachtig te kijken wat is er voor nodig en wellicht nog belangrijker wát niet.
+  Ik heb bevonden dat het belangrijker is voor mijzelf om te kijken naar wat er bij hoort en wat ik weg kan laten, wat overzicht brengt.
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  Wat lastig is om het overzicht te houden, wat heb ik gemaakt en wat kan er uiteindelijk anders of juist weggehaalt worden.
+  Een voorbeeld hiervan is denk ik mijn :root kleuren, die zouden eigenlijk veeeel specifieker moeten, maar wat mij nu tegenhoud is dat ik deze root kleuren overal al heb gebruikt en als ik nu de root aanpas moet ik alles aanpasssen, en dat houdt mij tegen... 
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  Wat ook beter kon is bijvoorbeeld meerdere andere dingen in de :root te zetten zoals marges, breedtes etc... ik denk dat ik daardoor nog meer overzicht voor mijzelf kan maken...
+
+  <img src="./readme-images/Readme-eind/bummer.png" width="375px" alt="bummer">
 </details>
-
-
-
 
 
 ## Bronnenlijst
@@ -281,6 +269,9 @@ Ook alles is tot mijn weten responsive, behalve de menu pagina. Dus de hoodpagin
   bv: Een vraag aan ChatGPT = "I am making a website, i made a css carousel section, with a section and an ul inside. the ul is display: flex, flex direction row, and the overflow is put to scroll. my body has the property of overflow= hidden and the max width is 100%. why is it still possible to scroll the whole page horizontal into nothing? and With inspect I can see the flex overlay of the scrollable carousel outside of the boundaries." Bovendien kwam uit dit antwoord niks nuttigs en heb ik Sanne gevraagd voor hulp.
   2. https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_overflow/CSS_carousels#responsive_carousel_final_result - gebruikt om informatie over mijn CSS carousel te vinden, zodat ik weet waar ik precies naar kijk in mijn carousel.
   3. (https://chrome.dev/carousel-configurator/) - Voor het daadwerkelijk maken van mijn Carousel.
-  4. 
+  4. bron: Google (iframe google maps embedded)
+  5. https://modx.com/blog/checking-and-unchecking-all-checkboxes-in-a-form
+  6. https://www.w3schools.com/jsreF/prop_checkbox_checked.asp
+  7. https://css-tricks.com/working-with-javascript-media-queries/
 
 </details>
