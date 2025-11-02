@@ -27,6 +27,7 @@
     --off-white: #fafafa;
     --sushi-red: #cd0000;
     --back-grey: #313131;
+    --active: rgba(255, 0, 0, 0.62);
     --selection_bg: var(--sushi-red);
     --selection-clr: var(--off-white);
 }
@@ -38,6 +39,7 @@
       --back-grey: #000000;
       --selection_bg: var(--off-white);
       --selection-clr: var(--sushi-red);
+      --active: blue;
     }
 }
 
@@ -64,11 +66,7 @@
 }
 
 button:active, a:active {
-  background-color: var(--off-white);
-  background-blend-mode: color-dodge;
-    border: var(--off-white) solid .2em;
-    
-    color: var(--off-white);
+  background-color: var(--active);
 }
 
 /* @media (prefers-color-scheme: dark) {
